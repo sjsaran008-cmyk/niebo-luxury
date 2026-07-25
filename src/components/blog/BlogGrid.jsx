@@ -1,38 +1,10 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import blogs from "../../data/blogs";
 
-import blog1 from "../../assets/images/blog/blog-1.webp";
-import blog2 from "../../assets/images/blog/blog-2.webp";
-import blog3 from "../../assets/images/blog/blog-3.webp";
-
-const featuredPost = {
-  slug: "luxury-modular-kitchen-guide",
-  category: "Luxury Living",
-  title: "Creating a Successful Residential Design Blog in India: Residential Design Blog Tips",
-  description:
-    "Starting a residential design blog in India is an exciting way to share your passion for home interiors and connect with homeowners looking for inspiration and solutions",
-  image: blog1,
-  date: "18 July 2026",
-  readTime: "6 Min Read",
-};
-
-const sidePosts = [
-  {
-    slug: "3bhk-home-interior-sivagiri",
-    category: "3BHK Home",
-    title: "Elegant 3BHK Home Interior Design for Mrs. Desaghanavi in Sivagiri",
-    image: blog2,
-    date: "15 July 2026",
-  },
-  {
-    slug: "luxury-tv-unit-design",
-    category: "TV Unit Design",
-    title: "Luxury TV Unit Design in Tiruchengode",
-    image: blog3,
-    date: "12 July 2026",
-  },
-];
+const featuredPost = blogs[0];
+const sidePosts = blogs.slice(1, 3);
 
 export default function BlogGrid() {
   return (
@@ -102,9 +74,9 @@ export default function BlogGrid() {
             </div>
 
             <div className="flex flex-col justify-between gap-8 p-10 lg:flex-row lg:items-center">
-              <p className="max-w-2xl text-lg leading-8 text-neutral-600">
-                {featuredPost.description}
-              </p>
+             <p className="max-w-2xl text-lg leading-8 text-neutral-600">
+              {featuredPost.excerpt}
+             </p>
 
               <Link
   to={`/blog/${featuredPost.slug}`}
@@ -236,77 +208,58 @@ export default function BlogGrid() {
 ========================= */}
 
 <div className="grid gap-10 lg:grid-cols-2">
-
-  {[blog1, blog2, blog3, blog1].map((image, index) => (
-
+  {blogs.map((blog, index) => (
     <motion.article
-      key={index}
+      key={blog.id}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{
-        duration: .7,
-        delay: index * .12,
+        duration: 0.7,
+        delay: index * 0.12,
       }}
       className={`group overflow-hidden rounded-[34px] bg-white shadow-sm ${
-        index % 2 === 0
-          ? "lg:translate-y-0"
-          : "lg:translate-y-20"
+        index % 2 === 0 ? "lg:translate-y-0" : "lg:translate-y-20"
       }`}
     >
-
       <div className="overflow-hidden">
-
         <img
-          src={image}
-          alt=""
+          src={blog.image}
+          alt={blog.title}
           className={`w-full object-cover transition duration-700 group-hover:scale-110 ${
-            index % 2 === 0
-              ? "h-[520px]"
-              : "h-[360px]"
+            index % 2 === 0 ? "h-[520px]" : "h-[360px]"
           }`}
         />
-
       </div>
 
       <div className="p-8">
-
         <span className="text-xs uppercase tracking-[0.3em] text-[#C8A96A]">
-          Interior Design
+          {blog.category}
         </span>
 
         <h3 className="mt-4 text-3xl font-light leading-snug text-black transition duration-300 group-hover:text-[#C8A96A]">
-          {
-            index % 2 === 0
-              ? "Creating Timeless Luxury Living Spaces"
-              : "Premium Interior Trends Every Homeowner Should Know"
-          }
+          {blog.title}
         </h3>
 
         <p className="mt-5 leading-8 text-neutral-600">
-          Discover carefully curated design inspirations,
-          premium materials and bespoke craftsmanship that
-          transform ordinary interiors into timeless luxury spaces.
+          {blog.excerpt}
         </p>
 
         <div className="mt-8 flex items-center justify-between">
-
           <span className="text-sm text-neutral-500">
-            5 Min Read
+            {blog.readTime}
           </span>
 
-          <button className="flex h-12 w-12 items-center justify-center rounded-full border border-neutral-200 transition-all duration-300 hover:border-[#C8A96A] hover:bg-[#C8A96A] hover:text-white">
-            <ArrowRight size={18}/>
-          </button>
-
+          <Link
+            to={`/blog/${blog.slug}`}
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-neutral-200 transition-all duration-300 hover:border-[#C8A96A] hover:bg-[#C8A96A] hover:text-white"
+          >
+            <ArrowRight size={18} />
+          </Link>
         </div>
-
       </div>
-
     </motion.article>
-
   ))}
-
 </div>
 {/* =========================
     Load More

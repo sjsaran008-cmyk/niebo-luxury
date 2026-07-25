@@ -50,7 +50,7 @@ export default function HomeCTA() {
             LET'S CREATE SOMETHING EXCEPTIONAL
           </span>
 
-          <h2 className="mt-8 font-display text-5xl font-light leading-tight text-white md:text-6xl lg:text-7xl">
+          <h2 className="mt-8 font-display text-4xl font-light leading-tight text-white md:text-6xl lg:text-7xl">
             Transform Your
             <br />
             Dream Space Into

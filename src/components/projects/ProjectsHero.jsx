@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import heroImage from "../../assets/images/hero.webp"; // Replace with a dedicated Projects Hero image later
 
 export default function ProjectsHero() {
@@ -6,16 +7,19 @@ export default function ProjectsHero() {
     <section className="relative h-screen overflow-hidden">
       {/* Background Image */}
       <img
-        src={heroImage}
-        alt="Luxury Interior Projects"
-        className="absolute inset-0 h-full w-full object-cover"
-      />
+  src={heroImage}
+  alt="Luxury Interior Projects"
+  fetchPriority="high"
+  loading="eager"
+  decoding="async"
+  className="absolute inset-0 h-full w-full object-cover"
+/>
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/65" />
 
       {/* Gold Glow */}
-      <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C8A96A]/10 blur-[180px]" />
+      <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C8A96A]/10 blur-[100px]" />
 
       {/* Content */}
       <div className="relative z-10 flex h-full items-center justify-center px-6">
@@ -34,7 +38,7 @@ export default function ProjectsHero() {
             initial={{ opacity: 0, y: 35 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="mt-8 font-display text-5xl font-light leading-tight text-white md:text-7xl"
+            className="mt-8 font-display text-4xl font-light leading-tight text-white md:text-7xl"
           >
             Spaces Designed
             <br />
@@ -52,29 +56,32 @@ export default function ProjectsHero() {
             reflects our commitment to quality and attention to detail.
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 35 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-            className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row"
-          >
-            <button className="rounded-full bg-[#C8A96A] px-8 py-4 font-medium text-black transition hover:scale-105 hover:bg-[#D9B978]">
-              Explore Gallery
-            </button>
-
-            <button
-  type="submit"
-  className="inline-flex items-center justify-center rounded-full bg-[#0B0B0B] px-8 py-4 text-sm font-medium text-white transition-all duration-300 hover:bg-[#C8A96A] hover:text-black"
+            <motion.div
+  initial={{ opacity: 0, y: 35 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.6, duration: 0.8 }}
+  className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row"
 >
-  Book Consultation
-</button>
-          </motion.div>
+  <a
+  href="#showcase"
+  className="inline-flex items-center justify-center rounded-full bg-[#C8A96A] px-6 py-3 md:px-8 md:py-4 font-medium text-black transition-all duration-300 hover:scale-105 hover:bg-[#D9B978]"
+>
+  Explore Gallery
+</a>
+
+  <Link
+    to="/contact"
+    className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 md:px-8 md:py-4 font-medium text-white transition-all duration-300 hover:border-[#C8A96A] hover:bg-[#C8A96A] hover:text-black"
+  >
+    Book Consultation
+  </Link>
+</motion.div>
 
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-center">
+      <div className="hidden md:block left-1/2 -translate-x-1/2 text-center">
         <p className="text-xs tracking-[0.45em] text-[#C8A96A]">
           SCROLL
         </p>

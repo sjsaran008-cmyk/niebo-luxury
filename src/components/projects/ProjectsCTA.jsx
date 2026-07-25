@@ -45,7 +45,7 @@ export default function ProjectsCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-zinc-300"
+          className="mx-auto mt-8 max-w-2xl text-base md:text-lg leading-7 md:leading-8 text-zinc-300"
         >
           Whether you're building a new home or renovating your existing
           space, our design experts are ready to create interiors tailored to

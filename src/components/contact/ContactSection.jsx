@@ -226,7 +226,7 @@ export default function ContactSection() {
                   </p>
 
                   <h4 className="mt-2 text-lg font-medium text-black">
-                    Coimbatore,
+                    Nanjaiuthukuli, Erode,
                     <br />
                     Tamil Nadu
                   </h4>

@@ -32,7 +32,7 @@ export default function BlogHero() {
           {/* Content */}
           <div className="absolute inset-0 flex items-center">
 
-            <div className="max-w-3xl px-12 lg:px-20">
+            <div className="max-w-[620px] px-12 lg:px-20">
 
               <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-5 py-2 text-xs uppercase tracking-[0.35em] text-[#C8A96A] backdrop-blur">
                 NIEBO INTERIORS JOURNAL
@@ -86,7 +86,7 @@ export default function BlogHero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: .5 }}
-            className="absolute bottom-10 left-10 hidden w-[360px] rounded-3xl border border-white/10 bg-white/10 p-4 backdrop-blur-xl lg:block"
+            className="absolute bottom-10 right-10 hidden w-[360px] rounded-[28px] border border-white/10 bg-white/10 p-4 backdrop-blur-2xl shadow-2xl lg:block"
           >
 
             <img

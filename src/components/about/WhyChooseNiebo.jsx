@@ -75,7 +75,7 @@ function WhyChooseNiebo() {
   return (
     <section
       id="why-niebo"
-      className="bg-[#0B0B0B] py-24 lg:py-32"
+      className="bg-[#0B0B0B] py-20 md:py-24 lg:py-32"
     >
       <div className="mx-auto max-w-7xl px-6">
 
@@ -99,7 +99,7 @@ function WhyChooseNiebo() {
             Crafted With Purpose.
           </h2>
 
-          <p className="mt-8 text-lg leading-8 text-zinc-400">
+          <p className="mt-8 text-base md:text-lg leading-7 md:leading-8 text-zinc-400">
             Our commitment to quality, innovation, and precision
             ensures that every interior we create reflects timeless
             elegance and lasting value.
@@ -123,11 +123,11 @@ function WhyChooseNiebo() {
                 key={index}
                 variants={item}
                 whileHover={{
-                  y: -10,
+                  y: -5,
                 }}
-                className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-500 hover:border-[#C8A96A]/40 hover:bg-white/[0.05]"
+                className="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8  transition-all duration-500 hover:border-[#C8A96A]/40 hover:bg-white/[0.05]"
               >
-                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#C8A96A]/10 transition-all duration-300 group-hover:bg-[#C8A96A]">
+                <div className="flex h-14 w-14 md:h-16 md:w-16items-center justify-center rounded-2xl bg-[#C8A96A]/10 transition-all duration-300 group-hover:bg-[#C8A96A]">
 
                   <Icon
                     size={28}
@@ -136,15 +136,15 @@ function WhyChooseNiebo() {
 
                 </div>
 
-                <h3 className="mt-8 text-2xl font-medium leading-snug text-white">
+                <h3 className="mt-8 text-xl md:text-2xl font-medium leading-snug text-white">
                   {feature.title}
                 </h3>
 
-                <p className="mt-5 leading-8 text-zinc-400">
+                <p className="mt-5 leading-7 md:leading-8 text-zinc-400">
                   {feature.description}
                 </p>
 
-                <div className="mt-8 h-px w-16 bg-[#C8A96A]/40 transition-all duration-300 group-hover:w-24 group-hover:bg-[#C8A96A]" />
+                <div className="mt-8 h-px w-16 bg-[#C8A96A]/40 transition-all duration-300 grid gap-8 md:grid-cols-2 xl:grid-cols-3 group-hover:bg-[#C8A96A]" />
               </motion.div>
             );
           })}

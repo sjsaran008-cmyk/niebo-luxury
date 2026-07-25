@@ -269,7 +269,7 @@ export default function WhyChooseUs() {
             <div className="mt-12 flex flex-col items-center justify-center gap-5 sm:flex-row">
 
               <motion.a
-                href="#contact"
+                href="/contact"
                 whileHover={{
                   scale: 1.04,
                   y: -3,

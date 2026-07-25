@@ -21,21 +21,28 @@ const Hero = () => {
   return (
     <section
       id="top"
-      className="relative flex h-screen min-h-[720px] w-full items-end overflow-hidden bg-obsidian"
+      className="relative flex min-h-[85svh] lg:min-h-screen w-full items-end overflow-hidden bg-obsidian"
     >
-      <img
-        src={heroImage}
-        alt="A Niebo Interiors living space with warm natural light and considered furnishings"
-        className="absolute inset-0 h-full w-full object-cover object-[65%_center] scale-[1.02]"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-black/15" />
+      <picture>
+  <source srcSet={heroImage} type="image/webp" />
+  <img
+    src={heroImage}
+    loading="eager"
+    fetchPriority="high"
+    decoding="async"
+    alt="Luxury Interior"
+    className="absolute inset-0 h-full w-full object-cover object-center md:object-[65%_center]"
+  />
+</picture>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/45 to-black/15" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
       <motion.div
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true }}
         variants={container}
-        className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pb-32 lg:px-12 lg:pb-40"
+        className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pb-20 md:pb-28 lg:pb-40"
       >
         <motion.div variants={item} className="mb-6 flex items-center gap-4">
           <motion.span
@@ -51,7 +58,7 @@ const Hero = () => {
 
         <motion.h1
           variants={item}
-          className="max-w-4xl font-display text-5xl font-light italic leading-[1.1] text-ivory sm:text-6xl lg:text-7xl"
+          className="max-w-4xl font-display text-5xl font-light italic leading-[1.1] text-ivory sm:text-5xl lg:text-7xl"
         >
           Crafting Interiors
           <br />
@@ -60,14 +67,14 @@ const Hero = () => {
 
         <motion.p
           variants={item}
-          className="mt-6 max-w-xl font-body text-base font-light leading-relaxed text-stone lg:text-lg"
+          className="mt-6 max-w-lg md:max-w-xl font-body text-base font-light leading-relaxed text-stone lg:text-lg"
         >
           At Niebo Interiors, every project is thoughtfully designed and crafted in our own manufacturing facility using premium materials, precision engineering, and timeless aesthetics—creating spaces that are elegant, functional, and built to last.
         </motion.p>
 
         <motion.div
           variants={item}
-          className="mt-10 flex flex-wrap items-center gap-5"
+          className="mt-10 flex flex-col sm:flex-row gap-4"
         >
           <a
             href="/projects"

@@ -20,7 +20,7 @@ export default function OurStory() {
   return (
     <section
       id="our-story"
-      className="bg-white py-24 lg:py-32"
+      className="bg-white py-20 md:py-24 lg:py-32"
     >
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
 
@@ -42,7 +42,7 @@ export default function OurStory() {
             Creating Timeless Interiors.
           </h2>
 
-          <div className="mt-10 space-y-6 text-lg leading-9 text-gray-600">
+          <div className="mt-10 space-y-6 text-base md:text-lg leading-8 md:leading-9 text-gray-600">
 
             <p>
               At <strong>Niebo Interiors</strong>, we believe exceptional
@@ -68,7 +68,7 @@ export default function OurStory() {
 
           <motion.a
             href="#why-niebo"
-            whileHover={{ y: -3 }}
+            whileHover={{ y: -2 }}
             className="mt-12 inline-flex rounded-full border border-[#C8A96A] px-8 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#C8A96A] transition hover:bg-[#C8A96A] hover:text-black"
           >
             Why Choose Niebo
@@ -84,17 +84,19 @@ export default function OurStory() {
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="absolute -left-6 -top-6 h-full w-full rounded-[32px] border border-[#C8A96A]/20" />
+          <div className="hidden md:block h-full w-full rounded-[32px] border border-[#C8A96A]/20" />
 
           <img
-            src={storyImage}
-            alt="Our Story"
-            className="relative h-[650px] w-full rounded-[32px] object-cover shadow-2xl"
-          />
+  src={storyImage}
+  alt="Our Story"
+  loading="lazy"
+  decoding="async"
+  className="relative h-[500px] md:h-[650px] w-full rounded-[32px] object-cover shadow-2xl"
+/>
 
           {/* Floating Badge */}
 
-          <div className="absolute bottom-8 left-8 rounded-2xl bg-white/95 px-8 py-5 shadow-xl backdrop-blur">
+          <div className="absolute bottom-8 left-8 rounded-2xl bg-white/95 px-5 py-4 md:px-8 md:py-5 shadow-xl backdrop-blur">
 
             <h3 className="font-display text-3xl text-[#C8A96A]">
               Quality

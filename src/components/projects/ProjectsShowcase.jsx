@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import heroImage from "../../assets/images/hero.webp";
 import kitchen from "../../assets/about/kitchen.webp";
@@ -25,47 +26,56 @@ const categories = [
 const projects = [
   {
     id: 1,
-    category: "Full Home",
+    slug: "full-home",
+    title: "Full Home",
     image: heroImage,
   },
   {
     id: 2,
-    category: "Modular Kitchen",
+    slug: "modular-kitchen",
+    title: "Modular Kitchen",
     image: kitchen,
   },
   {
     id: 3,
-    category: "Living Room",
+    slug: "living-room",
+    title: "Living Room",
     image: living,
   },
   {
     id: 4,
-    category: "Bedroom",
+    slug: "bedroom",
+    title: "Bedroom",
     image: bedroom,
   },
   {
     id: 5,
-    category: "Wardrobe",
+    slug: "wardrobe",
+    title: "Wardrobe",
     image: wardrobe,
   },
   {
     id: 6,
-    category: "TV Unit",
+    slug: "tv-unit",
+    title: "TV Unit",
     image: tvunit,
   },
   {
     id: 7,
-    category: "Pooja Unit",
+    slug: "pooja-unit",
+    title: "Pooja Unit",
     image: heroImage,
   },
   {
     id: 8,
-    category: "Office",
+    slug: "office",
+    title: "Office",
     image: heroImage,
   },
   {
   id: 9,
-  category: "Commercial",
+  slug: "commercial",
+  title: "Commercial",
   image: office,
 },
 ];
@@ -85,7 +95,11 @@ export default function ProjectsShowcase({
   }, [activeCategory]);
 
   return (
-    <section className="bg-white py-20 lg:py-24">
+    
+    <section
+  id="showcase"
+  className="bg-white py-20 lg:py-24"
+>
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Heading */}
@@ -149,17 +163,22 @@ export default function ProjectsShowcase({
               {/* Image */}
               <div className="relative overflow-hidden">
                 <img
-                  src={project.image}
-                  alt={project.title}
-                  className="h-80 w-full object-cover transition duration-700 group-hover:scale-110"
-                />
+  src={project.image}
+  alt={project.category}
+  loading="lazy"
+  decoding="async"
+  className="h-80 w-full object-cover transition duration-700 group-hover:scale-110"
+/>
 
                 {/* Overlay */}
                 <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/85 via-black/30 to-transparent p-8 opacity-0 transition duration-500 group-hover:opacity-100">
-                  <button className="inline-flex items-center gap-2 rounded-full bg-[#C8A96A] px-5 py-3 text-sm font-medium text-black">
-                    View Project
-                    <ArrowUpRight size={18} />
-                  </button>
+                 <Link
+  to={`/projects/${project.slug}`}
+  className="inline-flex items-center gap-2 rounded-full bg-[#C8A96A] px-5 py-3 text-sm font-medium text-black transition-all duration-300 hover:bg-[#D9B978]"
+>
+  View Project
+  <ArrowUpRight size={18} />
+</Link>
                 </div>
               </div>
 
@@ -170,7 +189,7 @@ export default function ProjectsShowcase({
                 </span>
 
                 <h3 className="mt-3 text-2xl font-light text-zinc-900">
-                  {project.title}
+                  {project.category}
                 </h3>
 
                 <p className="mt-3 text-zinc-600">
@@ -194,7 +213,7 @@ export default function ProjectsShowcase({
             </p>
           </div>
         )}
-      </div>
-    </section>
+       </div>
+</section>
   );
 }

@@ -61,11 +61,11 @@ export default function InstallationProcess() {
   return (
     <section
       id="installation"
-      className="relative overflow-hidden bg-[#0B0B0B] py-24 lg:py-32"
+      className="relative overflow-hidden bg-[#0B0B0B] py-20 md:py-24 lg:py-32"
     >
       {/* Gold Glow */}
 
-      <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#C8A96A]/5 blur-[180px]" />
+      <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#C8A96A]/5 hidden md:block" />
 
       <div className="relative mx-auto max-w-7xl px-6">
 
@@ -87,7 +87,7 @@ export default function InstallationProcess() {
             To Lifetime Support.
           </h2>
 
-          <p className="mt-8 text-lg leading-8 text-zinc-400">
+          <p className="mt-8 text-base md:text-lg leading-7 md:leading-8 text-zinc-400">
             Every project is completed with precision,
             professionalism, and dependable after-sales
             support to ensure lasting satisfaction.
@@ -101,7 +101,7 @@ export default function InstallationProcess() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid gap-8 md:grid-cols-2 xl:grid-cols-4"
+          className="grid gap-6 md:gap-8 md:grid-cols-2 xl:grid-cols-4"
         >
           {steps.map((step, index) => {
             const Icon = step.icon;
@@ -110,10 +110,10 @@ export default function InstallationProcess() {
               <motion.div
                 key={index}
                 variants={item}
-                whileHover={{ y: -8 }}
-                className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-500 hover:border-[#C8A96A]/40 hover:bg-white/[0.05]"
+                whileHover={{ y: -4 }}
+                className="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 transition-all duration-500 hover:border-[#C8A96A]/40 hover:bg-white/[0.05]"
               >
-                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#C8A96A]/10 transition-all duration-300 group-hover:bg-[#C8A96A]">
+                <div className="flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-2xl bg-[#C8A96A]/10 transition-all duration-300 group-hover:bg-[#C8A96A]">
 
                   <Icon
                     size={28}
@@ -122,7 +122,7 @@ export default function InstallationProcess() {
 
                 </div>
 
-                <h3 className="mt-8 text-2xl font-medium text-white">
+                <h3 className="mt-8 text-xl md:text-2xlfont-medium text-white">
                   {step.title}
                 </h3>
 
@@ -145,7 +145,7 @@ export default function InstallationProcess() {
           viewport={{ once: true }}
           className="mx-auto mt-24 max-w-4xl border-t border-white/10 pt-12 text-center"
         >
-          <p className="font-display text-3xl font-light italic leading-relaxed text-white md:text-4xl">
+          <p className="font-display text-2xl font-light italic leading-relaxed text-white md:text-4xl">
             "Our commitment doesn't end
             <br />
             when the installation is complete.
