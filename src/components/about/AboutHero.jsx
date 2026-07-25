@@ -38,7 +38,7 @@ export default function AboutHero() {
 
       {/* Gold Glow */}
 
-      <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C8A96A]/10 hidden md:block" />
+      <div className="absolute left-1/2 top-1/2 hidden h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C8A96A]/10 blur-[180px] md:block" />
 
       {/* Content */}
 

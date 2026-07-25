@@ -26,58 +26,53 @@ const categories = [
 const projects = [
   {
     id: 1,
-    slug: "full-home",
+    
     title: "Full Home",
-    image: heroImage,
+    category: "Full Home",
+    image: living,
   },
   {
     id: 2,
-    slug: "modular-kitchen",
+    category: "Modular Kitchen",
     title: "Modular Kitchen",
     image: kitchen,
   },
   {
     id: 3,
-    slug: "living-room",
+    category: "Living Room",
     title: "Living Room",
     image: living,
   },
   {
     id: 4,
-    slug: "bedroom",
+    category: "Bedroom",
     title: "Bedroom",
     image: bedroom,
   },
   {
     id: 5,
-    slug: "wardrobe",
+    category: "Wardrobe",
     title: "Wardrobe",
     image: wardrobe,
   },
   {
     id: 6,
-    slug: "tv-unit",
+    category: "TV Unit",
     title: "TV Unit",
     image: tvunit,
   },
   {
-    id: 7,
-    slug: "pooja-unit",
-    title: "Pooja Unit",
-    image: heroImage,
-  },
-  {
     id: 8,
-    slug: "office",
+    category: "Office",
     title: "Office",
     image: heroImage,
   },
   {
-  id: 9,
-  slug: "commercial",
-  title: "Commercial",
-  image: office,
-},
+    id: 9,
+    category: "Commercial",
+    title: "Commercial",
+    image: office,
+  },
 ];
 
 export default function ProjectsShowcase({
@@ -129,7 +124,7 @@ export default function ProjectsShowcase({
 
         {/* Category Tabs */}
 
-        <div className="mb-16 flex gap-4 overflow-x-auto pb-2">
+        <div className="mb-16 flex gap-4 scrollbar-hide pb-2">
           {categories.map((category) => (
             <button
               key={category}
@@ -147,7 +142,7 @@ export default function ProjectsShowcase({
 
         {/* Gallery */}
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-6 md:gap-8 md:grid-cols-2 xl:grid-cols-3">
                     {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -158,7 +153,7 @@ export default function ProjectsShowcase({
                 duration: 0.5,
                 delay: index * 0.08,
               }}
-              className="group overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+              className="group overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
             >
               {/* Image */}
               <div className="relative overflow-hidden">
@@ -167,7 +162,7 @@ export default function ProjectsShowcase({
   alt={project.category}
   loading="lazy"
   decoding="async"
-  className="h-80 w-full object-cover transition duration-700 group-hover:scale-110"
+  className="h-64 md:h-80 w-full object-cover transition duration-700 group-hover:scale-110"
 />
 
                 {/* Overlay */}

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import factoryImage from "../../assets/images/hero.webp";
+import factoryImage from "../../assets/about/factory.webp";
 const fadeLeft = {
   hidden: {
     opacity: 0,

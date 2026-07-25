@@ -184,7 +184,7 @@ export default function ContactSection() {
                   </p>
 
                   <h4 className="mt-2 text-lg font-medium text-black">
-                    +91 82208 61165
+                    +91 83007 66241
                   </h4>
                 </div>
               </div>
@@ -205,7 +205,7 @@ export default function ContactSection() {
                   </p>
 
                   <h4 className="mt-2 text-lg font-medium text-black">
-                    info@niebointeriors.com
+                    niebo.interiors@gmail.com
                   </h4>
                 </div>
               </div>

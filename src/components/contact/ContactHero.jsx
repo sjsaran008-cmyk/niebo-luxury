@@ -6,13 +6,15 @@ export default function ContactHero() {
   return (
     <section className="relative mt-6 overflow-hidden rounded-[32px]">
       {/* Background Image */}
-      <div className="relative h-[80vh] min-h-[600px]">
+      <div className="relative min-h-[100svh] md:min-h-[700px]">
         <img
-          src={heroImage}
-          alt="Luxury Interior"
-          className="h-full w-full object-cover"
-        />
-
+  src={heroImage}
+  alt="Luxury Interior"
+  fetchPriority="high"
+  loading="eager"
+  decoding="async"
+  className="h-full w-full object-cover"
+/>
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
 

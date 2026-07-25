@@ -33,7 +33,7 @@ export default function ProjectsFAQ() {
   };
 
   return (
-    <section className="bg-white py-24 lg:py-32">
+    <section className="bg-white py-20 md:py-24 lg:py-32">
       <div className="mx-auto max-w-4xl px-6">
         {/* Heading */}
         <motion.div
@@ -47,11 +47,11 @@ export default function ProjectsFAQ() {
             Frequently Asked Questions
           </span>
 
-          <h2 className="mt-5 text-4xl font-light text-zinc-900 md:text-5xl">
+          <h2 className="mt-5 text-3xl font-light text-zinc-900 md:text-5xl">
             Have Questions?
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-zinc-600 leading-8">
+          <p className="mx-auto mt-6 max-w-2xl text-zinc-600 text-base leading-7 md:leading-8">
             Everything you need to know before starting your dream interior
             project.
           </p>
@@ -73,9 +73,9 @@ export default function ProjectsFAQ() {
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="flex w-full items-center justify-between px-8 py-6 text-left"
+                  className="flex w-full items-center justify-between px-5 py-5 md:px-8 md:py-6 text-left"
                 >
-                  <h3 className="text-lg font-medium text-zinc-900">
+                  <h3 className="text-base md:text-lgfont-medium text-zinc-900">
                     {faq.question}
                   </h3>
 
@@ -95,8 +95,8 @@ export default function ProjectsFAQ() {
                   transition={{ duration: 0.3 }}
                   className="overflow-hidden"
                 >
-                  <div className="border-t border-zinc-200 px-8 py-6">
-                    <p className="leading-8 text-zinc-600">
+                  <div className="border-t border-zinc-200 px-5 py-5 md:px-8 md:py-6">
+                    <p className="text-base leading-7 md:leading-8 text-zinc-600">
                       {faq.answer}
                     </p>
                   </div>

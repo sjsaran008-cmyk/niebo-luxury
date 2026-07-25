@@ -33,9 +33,9 @@ const stats = [
 
 export default function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-[#0B0B0B] py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-[#0B0B0B] py-20 md:py-24 lg:py-32">
       {/* Gold Glow */}
-      <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#C8A96A]/10 blur-[180px]" />
+      <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#C8A96A]/10 blur-[100px]" />
 
       <div className="relative mx-auto max-w-7xl px-6">
 
@@ -51,7 +51,7 @@ export default function Testimonials() {
             CLIENT EXPERIENCES
           </span>
 
-          <h2 className="mt-5 text-4xl font-light text-white md:text-5xl">
+          <h2 className="mt-5 text-3xl font-light text-white md:text-5xl">
             Trusted By Families.
             <br />
             Crafted With Excellence.
@@ -68,7 +68,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.15 }}
               viewport={{ once: true }}
-              className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-md"
+              className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 backdrop-blur-md"
             >
               <div className="mb-6 flex">
                 {[...Array(5)].map((_, i) => (
@@ -80,7 +80,7 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <p className="leading-8 text-zinc-300">
+              <p className="text-sm md:text-base leading-7 md:leading-8 text-zinc-300">
                 "{item.review}"
               </p>
 
@@ -108,7 +108,7 @@ export default function Testimonials() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h3 className="text-5xl font-light text-[#C8A96A]">
+              <h3 className="text-4xl md:text-5xl font-light text-[#C8A96A]">
                 {item.value}
               </h3>
 
@@ -126,17 +126,14 @@ export default function Testimonials() {
   viewport={{ once: true }}
   className="mt-16 flex justify-center"
 >
-  <Link
-    to="https://www.google.com/maps/place/HAFELE+STUDIO+PARTNER+-+NIEBO+INTERIORS/@11.260758,77.7695205,17z/data=!4m8!3m7!1s0x3ba97b00207ef3d7:0x2bf8548495de381f!8m2!3d11.260758!4d77.7720954!9m1!1b1!16s%2Fg%2F11wnvhslfm?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D"
-    className="group inline-flex items-center gap-3 rounded-full border border-[#C8A96A] px-8 py-4 text-sm font-medium uppercase tracking-[0.2em] text-[#C8A96A] transition-all duration-300 hover:bg-[#C8A96A] hover:text-black"
-  >
-    Explore Testimonials
-
-    <ArrowRight
-      size={18}
-      className="transition-transform duration-300 group-hover:translate-x-1"
-    />
-  </Link>
+  <a
+  href="https://www.google.com/maps/place/HAFELE+STUDIO+PARTNER+-+NIEBO+INTERIORS/@11.260758,77.7672245,17z/data=!4m8!3m7!1s0x3ba97b00207ef3d7:0x2bf8548495de381f!8m2!3d11.260758!4d77.7720954!9m1!1b1!16s%2Fg%2F11wnvhslfm?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group inline-flex items-center gap-3 rounded-full border border-[#C8A96A] px-6 py-3 md:px-8 md:py-4 text-sm font-medium uppercase tracking-[0.2em] text-[#C8A96A] transition-all duration-300 hover:bg-[#C8A96A] hover:text-black"
+>
+  Explore Testimonials
+</a>
 </motion.div>
 
       </div>

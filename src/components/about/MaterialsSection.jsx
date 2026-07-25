@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import materialsImage from "../../assets/images/hero.webp";
+import materialsImage from "/Users/niebo-dm/niebo-luxury/src/assets/about/Premiumhardware.webp";
 const fadeUp = {
   hidden: {
     opacity: 0,
