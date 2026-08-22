@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import materialsImage from "../../assets/about/Premiumhardware.webp";
+import materialsImage from "../../assets/about/kitchen.webp";
 const fadeUp = {
   hidden: {
     opacity: 0,

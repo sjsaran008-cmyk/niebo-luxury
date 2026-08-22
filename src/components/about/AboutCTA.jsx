@@ -68,7 +68,7 @@ export default function AboutCTA() {
           <div className="mt-14 flex flex-col items-center justify-center gap-5 sm:flex-row">
 
             <motion.a
-              href="#contact"
+              href="/contact"
               whileHover={{
                 scale: 1.05,
                 y: -4,
@@ -82,7 +82,7 @@ export default function AboutCTA() {
             </motion.a>
 
             <motion.a
-              href="#projects"
+              href="/projects"
               whileHover={{
                 scale: 1.05,
                 y: -4,

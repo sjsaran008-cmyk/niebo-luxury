@@ -44,7 +44,7 @@ export default function ContactHero() {
               </div>
 
               {/* Heading */}
-              <h1 className="text-5xl font-light leading-tight text-white md:text-7xl">
+              <h1 className="text-4xl font-light leading-tight text-white md:text-7xl">
                 Let's Create
                 <br />
                 Your Dream Space
@@ -54,19 +54,19 @@ export default function ContactHero() {
               <div className="mt-8 h-[2px] w-20 bg-[#C8A96A]" />
 
               {/* Description */}
-              <p className="mt-8 max-w-xl text-lg leading-8 text-white/80">
+              <p className="mt-8 max-w-xl text-base md:text-lg leading-7 md:leading-8 text-white/80">
                 From luxury modular kitchens to complete home interiors,
                 our expert designers are ready to transform your vision
                 into a timeless living experience.
               </p>
 
               {/* CTA */}
-              <Link
-                to="#contact-form"
-                className="mt-10 inline-flex items-center rounded-full bg-[#C8A96A] px-8 py-4 text-sm font-medium text-black transition duration-300 hover:scale-105 hover:bg-[#D7B77A]"
-              >
-                Schedule a Consultation
-              </Link>
+<a
+  href="#consultation"
+  className="mt-10 inline-flex items-center rounded-full bg-[#C8A96A] px-6 py-3 text-sm font-medium text-black transition duration-300 hover:scale-105 hover:bg-[#D7B77A] md:px-8 md:py-4"
+>
+  Schedule a Consultation
+</a>
             </motion.div>
           </div>
         </div>

@@ -8,7 +8,7 @@ import kitchen from "../../assets/about/kitchen.webp";
 import tvunit from "../../assets/about/tv-unit.webp";
 import bedroom from "../../assets/about/bedroom.webp";
 import living from "../../assets/about/living.webp";
-import wardrobe from "../../assets/about/wardrobe.webp";
+import wardrobe from "../../assets/about/bedroom.webp";
 import office from "../../assets/about/office.webp";
 
 const categories = [
@@ -122,24 +122,70 @@ export default function ProjectsShowcase({
           </p>
         </motion.div>
 
-        {/* Category Tabs */}
+        {/* ================= CATEGORY FILTER ================= */}
 
-        <div className="mb-16 flex gap-4 scrollbar-hide pb-2">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setActiveCategory(category)}
-              className={`whitespace-nowrap rounded-full border px-6 py-3 text-sm font-medium transition-all duration-300 ${
-                activeCategory === category
-                  ? "border-[#C8A96A] bg-[#C8A96A] text-black shadow-lg"
-                  : "border-zinc-300 bg-white text-zinc-700 hover:border-[#C8A96A] hover:text-[#C8A96A]"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
+<div className="mb-16">
 
+  {/* MOBILE DROPDOWN */}
+  <div className="md:hidden">
+    <label
+      htmlFor="project-category"
+      className="mb-3 block text-xs uppercase tracking-[0.25em] text-[#B18A45]"
+    >
+      Explore By Category
+    </label>
+
+    <div className="relative">
+      <select
+        id="project-category"
+        value={activeCategory}
+        onChange={(e) => setActiveCategory(e.target.value)}
+        className="w-full appearance-none rounded-2xl border border-[#C8A96A]/40 bg-white px-5 py-4 pr-12 text-sm font-medium text-zinc-900 outline-none transition focus:border-[#C8A96A] focus:ring-2 focus:ring-[#C8A96A]/20"
+      >
+        {categories.map((category) => (
+          <option key={category} value={category}>
+            {category}
+          </option>
+        ))}
+      </select>
+
+      {/* Dropdown Arrow */}
+      <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-[#B18A45]">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+
+  {/* DESKTOP CATEGORY PILLS */}
+  <div className="hidden items-center justify-center gap-4 md:flex">
+    {categories.map((category) => (
+      <button
+        key={category}
+        onClick={() => setActiveCategory(category)}
+        className={`whitespace-nowrap rounded-full border px-6 py-3 text-sm font-medium transition-all duration-300 ${
+          activeCategory === category
+            ? "border-[#C8A96A] bg-[#C8A96A] text-black shadow-lg"
+            : "border-zinc-300 bg-white text-zinc-700 hover:border-[#C8A96A] hover:text-[#C8A96A]"
+        }`}
+      >
+        {category}
+      </button>
+    ))}
+  </div>
+
+</div>
         {/* Gallery */}
 
         <div className="grid gap-6 md:gap-8 md:grid-cols-2 xl:grid-cols-3">
@@ -168,7 +214,7 @@ export default function ProjectsShowcase({
                 {/* Overlay */}
                 <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/85 via-black/30 to-transparent p-8 opacity-0 transition duration-500 group-hover:opacity-100">
                  <Link
-  to={`/projects/${project.slug}`}
+  to={`/projects/${String(project.id)}`}
   className="inline-flex items-center gap-2 rounded-full bg-[#C8A96A] px-5 py-3 text-sm font-medium text-black transition-all duration-300 hover:bg-[#D9B978]"
 >
   View Project

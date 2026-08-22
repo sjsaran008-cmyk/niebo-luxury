@@ -59,14 +59,37 @@ export default function ProjectsCTA() {
           transition={{ delay: 0.45 }}
           className="mt-12 flex flex-col justify-center gap-5 sm:flex-row"
         >
-          <button className="inline-flex items-center justify-center gap-3 rounded-full bg-[#C8A96A] px-8 py-4 font-medium text-black transition duration-300 hover:scale-105 hover:bg-[#D8B67A]">
-            Book Free Consultation
-            <ArrowRight size={18} />
-          </button>
+          <div className="mt-14 flex flex-col items-center justify-center gap-5 sm:flex-row">
 
-          <button className="rounded-full border border-white/20 px-8 py-4 text-white transition duration-300 hover:border-[#C8A96A] hover:text-[#C8A96A]">
-            View More Projects
-          </button>
+  <motion.a
+    href="/contact"
+    whileHover={{
+      y: -4,
+      scale: 1.05,
+    }}
+    whileTap={{
+      scale: 0.98,
+    }}
+    className="inline-flex items-center justify-center rounded-full bg-[#C8A96A] px-10 py-4 text-sm font-semibold uppercase tracking-[0.25em] text-black transition-all duration-300 hover:bg-[#D7B878]"
+  >
+    Book Free Consultation
+  </motion.a>
+
+  <motion.a
+    href="/projects"
+    whileHover={{
+      y: -4,
+      scale: 1.05,
+    }}
+    whileTap={{
+      scale: 0.98,
+    }}
+    className="inline-flex items-center justify-center rounded-full border border-white/20 px-10 py-4 text-sm font-semibold uppercase tracking-[0.25em] text-white transition-all duration-300 hover:border-[#C8A96A] hover:text-[#C8A96A]"
+  >
+    View Our Projects
+  </motion.a>
+
+</div>
         </motion.div>
       </div>
     </section>

@@ -120,32 +120,30 @@ function WhyChooseNiebo() {
 
             return (
               <motion.div
-                key={index}
-                variants={item}
-                whileHover={{
-                  y: -5,
-                }}
-                className="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8  transition-all duration-500 hover:border-[#C8A96A]/40 hover:bg-white/[0.05]"
-              >
-                <div className="flex h-14 w-14 md:h-16 md:w-16items-center justify-center rounded-2xl bg-[#C8A96A]/10 transition-all duration-300 group-hover:bg-[#C8A96A]">
+  key={index}
+  variants={item}
+  whileHover={{
+    y: -5,
+  }}
+  className="group flex h-full flex-col rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-500 hover:border-[#C8A96A]/40 hover:bg-white/[0.05] md:p-8"
+>
+  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#C8A96A]/10 transition-all duration-300 group-hover:bg-[#C8A96A] md:h-16 md:w-16">
+    <Icon
+      size={28}
+      className="text-[#C8A96A] group-hover:text-black"
+    />
+  </div>
 
-                  <Icon
-                    size={28}
-                    className="text-[#C8A96A] group-hover:text-black"
-                  />
+  <h3 className="mt-8 text-xl font-medium leading-snug text-white md:text-2xl">
+    {feature.title}
+  </h3>
 
-                </div>
+  <p className="mt-5 flex-1 leading-7 text-zinc-400 md:leading-8">
+    {feature.description}
+  </p>
 
-                <h3 className="mt-8 text-xl md:text-2xl font-medium leading-snug text-white">
-                  {feature.title}
-                </h3>
-
-                <p className="mt-5 leading-7 md:leading-8 text-zinc-400">
-                  {feature.description}
-                </p>
-
-                <div className="mt-8 h-px w-16 bg-[#C8A96A]/40 transition-all duration-300 grid gap-8 md:grid-cols-2 xl:grid-cols-3 group-hover:bg-[#C8A96A]" />
-              </motion.div>
+  <div className="mt-8 h-px w-16 shrink-0 bg-[#C8A96A]/40 transition-all duration-300 group-hover:w-24 group-hover:bg-[#C8A96A]" />
+</motion.div>
             );
           })}
         </motion.div>

@@ -65,8 +65,6 @@ export default function InstallationProcess() {
     >
       {/* Gold Glow */}
 
-      <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#C8A96A]/5 hidden md:block" />
-
       <div className="relative mx-auto max-w-7xl px-6">
 
         {/* Heading */}

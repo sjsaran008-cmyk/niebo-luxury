@@ -71,12 +71,12 @@ export default function Navbar() {
 
           <div className="flex items-center gap-5 pr-4 md:pr-8">
 
-            <Link
-  to="/contact"
+            <a
+  href="/contact"
   className="hidden rounded-full bg-[#D7AE62] px-8 py-4 text-[15px] font-semibold text-black transition-all duration-300 hover:scale-105 hover:bg-[#E7C172] lg:block"
 >
   Get Free Consultation
-</Link>
+</a>
             <button
               className="mr-3 text-white lg:hidden"
               onClick={() => setMobileMenu(!mobileMenu)}
