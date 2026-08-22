@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import factoryImage from "../../assets/about/factory.webp";
+import factoryImage from "../../assets-optimized/about/factory.webp";
 const fadeLeft = {
   hidden: {
     opacity: 0,
@@ -145,3 +145,5 @@ export default function FactorySection() {
     </section>
   );
 }
+
+

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone, ChevronDown } from "lucide-react";
-import contactImage from "../../assets/images/contact/contact-hero.webp";
+import contactImage from "../../assets-optimized/images/contact/contact-hero.webp";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -433,3 +433,4 @@ export default function ContactSection() {
     </section>
   );
 }
+

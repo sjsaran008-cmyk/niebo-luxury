@@ -48,3 +48,4 @@ export default function RelatedBlogs({ currentBlogId }) {
     </section>
   );
 }
+

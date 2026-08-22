@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import logo from "../assets/images/logo.png";
+import logo from "../assets-optimized/images/logo.webp";
 
 import {
   ArrowLeft,
@@ -16,11 +16,11 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-import living from "../assets/about/living.webp";
-import kitchen from "../assets/about/kitchen.webp";
-import bedroom from "../assets/about/bedroom.webp";
-import tvunit from "../assets/about/tv-unit.webp";
-import wardrobe from "../assets/about/bedroom.webp";
+import living from "../assets-optimized/about/living.webp";
+import kitchen from "../assets-optimized/about/kitchen.webp";
+import bedroom from "../assets-optimized/about/bedroom.webp";
+import tvunit from "../assets-optimized/about/tv-unit.webp";
+import wardrobe from "../assets-optimized/about/bedroom.webp";
 
 /*
   IMPORTANT:
@@ -808,3 +808,4 @@ function InfoRow({ icon: Icon, label, value }) {
     </div>
   );
 }
+

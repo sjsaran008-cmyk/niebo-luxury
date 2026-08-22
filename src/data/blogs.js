@@ -1,8 +1,8 @@
 // src/data/blogs.js
 
-import blog1 from "../assets/images/blog/blog-1.webp";
-import blog2 from "../assets/images/blog/blog-2.webp";
-import blog3 from "../assets/images/blog/blog-3.webp";
+import blog1 from "../assets-optimized/images/blog/blog-1.webp";
+import blog2 from "../assets-optimized/images/blog/blog-2.webp";
+import blog3 from "../assets-optimized/images/blog/blog-3.webp";
 
 const blogs = [
   {
@@ -125,3 +125,4 @@ const blogs = [
   },
 ];
 export default blogs;
+

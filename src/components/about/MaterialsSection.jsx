@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import materialsImage from "../../assets/about/kitchen.webp";
+import materialsImage from "../../assets-optimized/about/kitchen.webp";
 const fadeUp = {
   hidden: {
     opacity: 0,
@@ -145,3 +145,4 @@ export default function MaterialsSection() {
     </section>
   );
 }
+

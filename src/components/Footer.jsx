@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin } from "lucide-react";
-import logo from "../assets/images/logo.png";
+import logo from "../assets-optimized/images/logo.webp";
 import {
   FaInstagram,
   FaFacebookF,
@@ -283,3 +283,4 @@ export default function Footer() {
     </footer>
   );
 }
+

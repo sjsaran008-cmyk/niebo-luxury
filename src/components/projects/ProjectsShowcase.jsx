@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import heroImage from "../../assets/images/hero.webp";
-import kitchen from "../../assets/about/kitchen.webp";
-import tvunit from "../../assets/about/tv-unit.webp";
-import bedroom from "../../assets/about/bedroom.webp";
-import living from "../../assets/about/living.webp";
-import wardrobe from "../../assets/about/bedroom.webp";
-import office from "../../assets/about/office.webp";
+import heroImage from "../../assets-optimized/images/hero.webp";
+import kitchen from "../../assets-optimized/about/kitchen.webp";
+import tvunit from "../../assets-optimized/about/tv-unit.webp";
+import bedroom from "../../assets-optimized/about/bedroom.webp";
+import living from "../../assets-optimized/about/living.webp";
+import wardrobe from "../../assets-optimized/about/bedroom.webp";
+import office from "../../assets-optimized/about/office.webp";
 
 const categories = [
   "All Projects",
@@ -258,3 +258,4 @@ export default function ProjectsShowcase({
 </section>
   );
 }
+

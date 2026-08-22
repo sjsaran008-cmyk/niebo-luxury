@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { HiBars3BottomRight, HiXMark } from "react-icons/hi2";
-import logo from "../assets/images/logo.png";
+import logo from "../assets-optimized/images/logo.webp";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -133,3 +133,4 @@ export default function Navbar() {
     </header>
   );
 }
+

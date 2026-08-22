@@ -98,3 +98,4 @@ export default function BlogContent({ blog }) {
     </section>
   );
 }
+

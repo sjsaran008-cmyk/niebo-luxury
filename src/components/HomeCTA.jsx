@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ctaImage from "../assets/images/hero.webp";
+import ctaImage from "../assets-optimized/images/hero.webp";
 
 const fadeUp = {
   hidden: {
@@ -126,3 +126,4 @@ export default function HomeCTA() {
     </section>
   );
 }
+

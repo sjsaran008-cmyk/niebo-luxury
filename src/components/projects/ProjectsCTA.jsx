@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import heroImage from "../../assets/images/hero.webp";
+import heroImage from "../../assets-optimized/images/hero.webp";
 
 export default function ProjectsCTA() {
   return (
@@ -95,3 +95,4 @@ export default function ProjectsCTA() {
     </section>
   );
 }
+

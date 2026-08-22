@@ -109,3 +109,4 @@ export default function ProjectsFAQ() {
     </section>
   );
 }
+

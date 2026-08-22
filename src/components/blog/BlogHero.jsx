@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import heroImage from "../../assets/images/blog/hero.webp";
-import thumbImage from "../../assets/images/blog/blog-1.webp";
+import heroImage from "../../assets-optimized/images/blog/hero.webp";
+import thumbImage from "../../assets-optimized/images/blog/blog-1.webp";
 
 export default function BlogHero() {
   return (
@@ -122,3 +122,4 @@ export default function BlogHero() {
     </section>
   );
 }
+

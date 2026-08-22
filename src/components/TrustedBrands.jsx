@@ -1,14 +1,14 @@
 import { FaHouzz } from "react-icons/fa";
 
-import hafele from "../assets/brands/hafele.png";
-import hettich from "../assets/brands/hettich.png";
-import blum from "../assets/brands/blum.png";
-import falmec from "../assets/brands/falmec.png";
-import asko from "../assets/brands/asko.png";
-import greenlam from "../assets/brands/greenlam.png";
-import merino from "../assets/brands/merino.png";
-import philips from "../assets/brands/philips.png";
-import rehau from "../assets/brands/rehau.png";
+import hafele from "../assets-optimized/brands/hafele.webp";
+import hettich from "../assets-optimized/brands/hettich.webp";
+import blum from "../assets-optimized/brands/blum.webp";
+import falmec from "../assets-optimized/brands/falmec.webp";
+import asko from "../assets-optimized/brands/asko.webp";
+import greenlam from "../assets-optimized/brands/greenlam.webp";
+import merino from "../assets-optimized/brands/merino.webp";
+import philips from "../assets-optimized/brands/philips.webp";
+import rehau from "../assets-optimized/brands/rehau.webp";
 
 
 const brands = [
@@ -105,3 +105,4 @@ export default function TrustedBrands() {
     </section>
   );
 }
+

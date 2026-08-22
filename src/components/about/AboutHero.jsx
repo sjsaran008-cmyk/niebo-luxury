@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImage from "../../assets/images/hero.webp";
+import heroImage from "../../assets-optimized/images/hero.webp";
 const fadeUp = {
   hidden: {
     opacity: 0,
@@ -115,3 +115,4 @@ export default function AboutHero() {
     </section>
   );
 }
+

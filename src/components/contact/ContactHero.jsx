@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import heroImage from "../../assets/images/contact/contact-hero.webp";
+import heroImage from "../../assets-optimized/images/contact/contact-hero.webp";
 
 export default function ContactHero() {
   return (
@@ -74,3 +74,4 @@ export default function ContactHero() {
     </section>
   );
 }
+

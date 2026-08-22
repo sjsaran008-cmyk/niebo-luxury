@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import heroImage from "../../assets/images/hero.webp"; // Replace with a dedicated Projects Hero image later
+import heroImage from "../../assets-optimized/images/hero.webp"; // Replace with a dedicated Projects Hero image later
 
 export default function ProjectsHero() {
   return (
@@ -91,3 +91,4 @@ export default function ProjectsHero() {
     </section>
   );
 }
+

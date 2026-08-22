@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import storyImage from "../../assets/images/hero.webp";
+import storyImage from "../../assets-optimized/images/hero.webp";
 
 const fadeUp = {
   hidden: {
@@ -113,3 +113,4 @@ export default function OurStory() {
     </section>
   );
 }
+
