@@ -19,7 +19,7 @@ export default function RelatedBlogs({ currentBlogId }) {
               key={blog.id}
               className="bg-white rounded-2xl overflow-hidden shadow"
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src={blog.image}
                 alt={blog.title}
                 className="w-full h-64 object-cover"
@@ -48,4 +48,5 @@ export default function RelatedBlogs({ currentBlogId }) {
     </section>
   );
 }
+
 

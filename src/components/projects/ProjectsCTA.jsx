@@ -6,7 +6,7 @@ export default function ProjectsCTA() {
   return (
     <section className="relative overflow-hidden py-28 lg:py-36">
       {/* Background Image */}
-      <img
+      <img loading="lazy" decoding="async"
         src={heroImage}
         alt="Luxury Interior"
         className="absolute inset-0 h-full w-full object-cover"
@@ -95,4 +95,5 @@ export default function ProjectsCTA() {
     </section>
   );
 }
+
 

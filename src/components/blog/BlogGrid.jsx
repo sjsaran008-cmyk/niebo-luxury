@@ -59,7 +59,7 @@ export default function BlogGrid() {
           >
             <div className="relative overflow-hidden">
 
-              <img
+              <img loading="lazy" decoding="async"
                 src={featuredPost.image}
                 alt={featuredPost.title}
                 loading="lazy"
@@ -136,7 +136,7 @@ export default function BlogGrid() {
 
                 <div className="relative overflow-hidden">
 
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={post.image}
                     alt={post.title}
                     loading="lazy"
@@ -272,7 +272,7 @@ export default function BlogGrid() {
 
               <div className="relative overflow-hidden">
 
-                <img
+                <img loading="lazy" decoding="async"
                   src={blog.image}
                   alt={blog.title}
                   loading="lazy"
@@ -362,4 +362,5 @@ export default function BlogGrid() {
     </section>
   );
 }
+
 

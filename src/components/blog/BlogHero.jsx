@@ -17,7 +17,7 @@ export default function BlogHero() {
           className="relative overflow-hidden rounded-[36px] bg-black"
         >
           {/* Background */}
-          <img
+          <img loading="lazy" decoding="async"
             src={heroImage}
             alt="Luxury Interior"
             className="h-[720px] w-full object-cover sm:h-[760px] lg:h-[780px]"
@@ -89,7 +89,7 @@ export default function BlogHero() {
             className="absolute bottom-10 right-10 hidden w-[360px] rounded-[28px] border border-white/10 bg-white/10 p-4 backdrop-blur-2xl shadow-2xl lg:block"
           >
 
-            <img
+            <img loading="lazy" decoding="async"
               src={thumbImage}
               alt=""
               className="h-48 w-full rounded-2xl object-cover"
@@ -122,4 +122,5 @@ export default function BlogHero() {
     </section>
   );
 }
+
 

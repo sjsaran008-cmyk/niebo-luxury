@@ -43,7 +43,7 @@ export default function Navbar() {
 
           <div className="flex items-center pl-4 md:pl-8">
 
-  <img
+  <img loading="lazy" decoding="async"
     src={logo}
     alt="Niebo Interiors"
     className="h-10 md:h-16 w-auto object-contain"
@@ -133,4 +133,5 @@ export default function Navbar() {
     </header>
   );
 }
+
 

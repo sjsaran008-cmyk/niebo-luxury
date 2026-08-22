@@ -7,7 +7,7 @@ export default function ContactHero() {
     <section className="relative mt-6 overflow-hidden rounded-[32px]">
       {/* Background Image */}
       <div className="relative min-h-[100svh] md:min-h-[700px]">
-        <img
+        <img loading="lazy" decoding="async"
   src={heroImage}
   alt="Luxury Interior"
   fetchPriority="high"
@@ -74,4 +74,5 @@ export default function ContactHero() {
     </section>
   );
 }
+
 

@@ -119,7 +119,7 @@ export default function MaterialsSection() {
 
           <div className="hidden md:block absolute -left-6 -bottom-6 h-full w-full rounded-[32px] border border-[#C8A96A]/20" />
 
-          <img
+          <img loading="lazy" decoding="async"
   src={materialsImage}
   alt="Premium Materials"
   loading="lazy"
@@ -145,4 +145,5 @@ export default function MaterialsSection() {
     </section>
   );
 }
+
 

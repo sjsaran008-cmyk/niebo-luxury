@@ -49,7 +49,7 @@ export default function FactorySection() {
         >
           <div className="hidden md:block absolute -right-6 -top-6 h-full w-full rounded-[32px] border border-[#C8A96A]/20" />
 
-          <img
+          <img loading="lazy" decoding="async"
   src={factoryImage}
   alt="Niebo Factory"
   loading="lazy"
@@ -145,5 +145,6 @@ export default function FactorySection() {
     </section>
   );
 }
+
 
 

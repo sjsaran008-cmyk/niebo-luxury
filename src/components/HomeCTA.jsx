@@ -24,7 +24,7 @@ export default function HomeCTA() {
     >
       {/* Background */}
 
-      <img
+      <img loading="lazy" decoding="async"
         src={ctaImage}
         alt="Luxury Interior"
         className="absolute inset-0 h-full w-full object-cover"
@@ -126,4 +126,5 @@ export default function HomeCTA() {
     </section>
   );
 }
+
 

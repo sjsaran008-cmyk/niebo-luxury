@@ -6,7 +6,7 @@ export default function ProjectsHero() {
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Background Image */}
-      <img
+      <img loading="lazy" decoding="async"
   src={heroImage}
   alt="Luxury Interior Projects"
   fetchPriority="high"
@@ -91,4 +91,5 @@ export default function ProjectsHero() {
     </section>
   );
 }
+
 

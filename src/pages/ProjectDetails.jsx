@@ -428,7 +428,7 @@ export default function ProjectDetails() {
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
 
           <Link to="/" className="flex items-center">
-            <img
+            <img loading="lazy" decoding="async"
               src={logo}
               alt="Niebo Interiors"
               className="h-10 w-auto object-contain"
@@ -577,7 +577,7 @@ export default function ProjectDetails() {
 
               <div className="relative overflow-hidden rounded-[1.8rem] border border-[#C8A96A]/40">
 
-                <img
+                <img loading="lazy" decoding="async"
                   src={project.hero}
                   alt={project.title}
                   className="h-[420px] w-full object-cover md:h-[560px]"
@@ -700,7 +700,7 @@ export default function ProjectDetails() {
                 className="group relative overflow-hidden rounded-3xl border border-white/10"
               >
 
-                <img
+                <img loading="lazy" decoding="async"
                   src={space.image}
                   alt={space.title}
                   className="h-80 w-full object-cover transition duration-700 group-hover:scale-105"
@@ -808,4 +808,5 @@ function InfoRow({ icon: Icon, label, value }) {
     </div>
   );
 }
+
 

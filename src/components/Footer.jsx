@@ -89,7 +89,7 @@ export default function Footer() {
               viewport={{ once: true }}
             >
 
-              <img
+              <img loading="lazy" decoding="async"
                   src={logo}
                   alt="Niebo Interiors"
                 className="w-44"
@@ -283,4 +283,5 @@ export default function Footer() {
     </footer>
   );
 }
+
 

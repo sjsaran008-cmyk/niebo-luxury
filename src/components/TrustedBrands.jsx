@@ -72,7 +72,7 @@ export default function TrustedBrands() {
               className="group flex h-28 md:h-36 items-center justify-center rounded-3xl border border-neutral-200 bg-white transition-all duration-500 md:hover:-translate-y-2 hover:border-[#C8A45C]/40 hover:shadow-[0_20px_60px_rgba(0,0,0,.08)]"
             >
 
-              <img
+              <img loading="lazy" decoding="async"
   src={brand.logo}
   alt={brand.name}
   loading="lazy"
@@ -105,4 +105,5 @@ export default function TrustedBrands() {
     </section>
   );
 }
+
 

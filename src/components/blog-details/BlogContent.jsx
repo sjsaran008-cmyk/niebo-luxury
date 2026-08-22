@@ -46,7 +46,7 @@ export default function BlogContent({ blog }) {
 
             {section.image && (
               <div className="mt-14 overflow-hidden rounded-[28px]">
-                <img
+                <img loading="lazy" decoding="async"
                   src={section.image}
                   alt={section.heading}
                   className="h-full w-full object-cover transition duration-700 hover:scale-105"
@@ -98,4 +98,5 @@ export default function BlogContent({ blog }) {
     </section>
   );
 }
+
 

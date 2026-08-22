@@ -203,7 +203,7 @@ export default function ProjectsShowcase({
             >
               {/* Image */}
               <div className="relative overflow-hidden">
-                <img
+                <img loading="lazy" decoding="async"
   src={project.image}
   alt={project.category}
   loading="lazy"
@@ -258,4 +258,5 @@ export default function ProjectsShowcase({
 </section>
   );
 }
+
 

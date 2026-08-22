@@ -37,7 +37,7 @@ export default function BlogDetailsHero({ blog }) {
 
           {/* Image */}
 
-          <img
+          <img loading="lazy" decoding="async"
             src={blog.image}
             alt={blog.title}
             className="absolute inset-0 h-full w-full object-cover"

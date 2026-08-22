@@ -348,7 +348,7 @@ export default function ContactSection() {
             {/* Image */}
 
             <div className="mt-10 overflow-hidden rounded-[28px]">
-              <img
+              <img loading="lazy" decoding="async"
                 src={contactImage}
                 alt="Luxury Interior"
                 className="h-[320px] w-full object-cover transition duration-700 hover:scale-105"
@@ -433,4 +433,5 @@ export default function ContactSection() {
     </section>
   );
 }
+
 

@@ -86,7 +86,7 @@ export default function OurStory() {
         >
           <div className="hidden md:block h-full w-full rounded-[32px] border border-[#C8A96A]/20" />
 
-          <img
+          <img loading="lazy" decoding="async"
   src={storyImage}
   alt="Our Story"
   loading="lazy"
@@ -113,4 +113,5 @@ export default function OurStory() {
     </section>
   );
 }
+
 
