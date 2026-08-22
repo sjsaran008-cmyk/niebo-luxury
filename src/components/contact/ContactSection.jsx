@@ -130,10 +130,10 @@ export default function ContactSection() {
   return (
     <section
   id="consultation"
-      className="bg-[#FAFAFA] py-24 lg:py-32"
+      className="w-full overflow-x-hidden bg-[#FAFAFA] py-16 lg:py-32"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="grid items-start gap-16 lg:grid-cols-2">
+      <div className="mx-auto w-full max-w-7xl min-w-0 px-4 sm:px-6 lg:px-10">
+        <div className="grid w-full min-w-0 items-start gap-10 lg:grid-cols-2 lg:gap-16">
 
           {/* ========================= */}
           {/* LEFT - CONTACT FORM */}
@@ -144,7 +144,7 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-[32px] border border-neutral-200 bg-white p-8 shadow-sm lg:p-10"
+            className="w-full min-w-0 overflow-hidden rounded-[32px] border border-neutral-200 bg-white p-6 shadow-sm sm:p-8 lg:p-10"
           >
             <span className="text-xs uppercase tracking-[0.3em] text-[#C8A96A]">
               Contact Us
@@ -156,7 +156,7 @@ export default function ContactSection() {
               Consultation
             </h2>
 
-            <p className="mt-6 text-base leading-8 text-neutral-600">
+            <p className="mt-6 w-full min-w-0 break-words text-sm leading-7 text-neutral-600 sm:text-base sm:leading-8">
               Tell us about your dream home and our designers will
               connect with you to create a personalized interior
               solution.
@@ -168,7 +168,7 @@ export default function ContactSection() {
 
             <form
               onSubmit={handleSubmit}
-              className="mt-10 space-y-6"
+              className="mt-8 w-full min-w-0 space-y-6 sm:mt-10"
             >
 
               {/* Name */}
@@ -185,7 +185,7 @@ export default function ContactSection() {
   onChange={handleChange}
   placeholder="Enter your full name"
   required
-  className="h-14 w-full rounded-2xl border border-neutral-200 px-5 text-neutral-900 placeholder:text-neutral-400 outline-none transition-all duration-300 focus:border-[#C8A96A]"
+  className="box-border h-14 w-full min-w-0 rounded-2xl border border-neutral-200 px-4 text-neutral-900 placeholder:text-neutral-400 outline-none transition-all duration-300 focus:border-[#C8A96A] sm:px-5"
 />
                 {errors.name && (
                    <p className="mt-2 text-sm text-red-500">
@@ -390,12 +390,12 @@ export default function ContactSection() {
                   />
                 </div>
 
-                <div>
+                <div className="min-w-0 flex-1">
                   <p className="text-sm uppercase tracking-[0.2em] text-neutral-500">
                     Email
                   </p>
 
-                  <h4 className="mt-2 text-lg font-medium text-black">
+                  <h4 className="mt-2 break-all text-base font-medium text-black sm:text-lg">
                     niebo.interiors@gmail.com
                   </h4>
                 </div>

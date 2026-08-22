@@ -11,14 +11,14 @@ export default function BlogCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="relative overflow-hidden rounded-[40px] bg-black px-8 py-20 lg:px-20"
+          className="relative w-full min-w-0 overflow-hidden rounded-[32px] bg-black px-5 py-14 sm:px-8 sm:py-20 lg:rounded-[40px] lg:px-20"
         >
           {/* Background Glow */}
           <div className="absolute -top-28 -left-24 h-72 w-72 rounded-full bg-[#C8A96A]/20 blur-[120px]" />
 
           <div className="absolute -bottom-28 -right-20 h-80 w-80 rounded-full bg-white/5 blur-[150px]" />
 
-          <div className="relative z-10 grid items-center gap-16 lg:grid-cols-2">
+          <div className="relative z-10 grid w-full min-w-0 items-center gap-10 lg:grid-cols-2 lg:gap-16">
             {/* Left */}
             <div>
               <span className="inline-flex rounded-full border border-[#C8A96A]/30 bg-[#C8A96A]/10 px-5 py-2 text-xs uppercase tracking-[0.35em] text-[#C8A96A]">
@@ -40,27 +40,27 @@ export default function BlogCTA() {
                 lifestyle, taste and vision.
               </p>
 
-              <div className="mt-10 flex flex-wrap gap-5">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-3 rounded-full bg-[#C8A96A] px-8 py-4 font-medium text-black transition-all duration-300 hover:scale-105"
-                >
-                  Book Free Consultation
-                  <ArrowRight size={18} />
-                </Link>
+              <div className="mt-8 flex w-full flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-5">
+  <Link
+    to="/contact"
+    className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#C8A96A] px-6 py-4 font-medium text-black transition-all duration-300 hover:scale-105 sm:w-auto sm:px-8"
+  >
+    Book Free Consultation
+    <ArrowRight size={18} />
+  </Link>
 
-                <a
-                  href="tel:+918220861165"
-                  className="inline-flex items-center gap-3 rounded-full border border-white/15 px-8 py-4 text-white transition-all duration-300 hover:border-[#C8A96A]"
-                >
-                  <PhoneCall size={18} />
-                  Call Now
-                </a>
-              </div>
+  <a
+    href="tel:+918220861165"
+    className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/15 px-6 py-4 text-white transition-all duration-300 hover:border-[#C8A96A] sm:w-auto sm:px-8"
+  >
+    <PhoneCall size={18} />
+    Call Now
+  </a>
+</div>
             </div>
 
             {/* Right */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid w-full min-w-0 grid-cols-2 gap-3 sm:gap-6">
               {[
                 {
                   value: "500+",
@@ -81,13 +81,13 @@ export default function BlogCTA() {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="rounded-[28px] border border-white/10 bg-white/5 p-8 backdrop-blur-xl"
+                  className="min-w-0 overflow-hidden rounded-[22px] border border-white/10 bg-white/5 p-4 backdrop-blur-xl sm:rounded-[28px] sm:p-8"
                 >
-                  <h3 className="text-4xl font-light text-[#C8A96A]">
+                  <h3 className="whitespace-nowrap text-2xl font-light text-[#C8A96A] sm:text-4xl">
                     {item.value}
                   </h3>
 
-                  <p className="mt-3 text-sm uppercase tracking-[0.25em] text-neutral-400">
+                  <p className="mt-3 break-words text-[10px] uppercase tracking-[0.18em] leading-4 text-neutral-400 sm:text-sm sm:tracking-[0.25em] sm:leading-normal">
                     {item.label}
                   </p>
                 </div>
@@ -98,7 +98,7 @@ export default function BlogCTA() {
           {/* Bottom Divider */}
           <div className="relative z-10 mt-20 border-t border-white/10 pt-8">
             <div className="flex flex-col items-center justify-between gap-6 text-center lg:flex-row lg:text-left">
-              <p className="max-w-2xl text-neutral-500">
+              <p className="w-full min-w-0 max-w-2xl break-words text-sm leading-7 text-neutral-500 sm:text-base">
                 From modular kitchens and wardrobes to complete home
                 interiors, we transform ideas into timeless living
                 spaces with premium craftsmanship.

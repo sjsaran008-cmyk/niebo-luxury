@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <section
       id="top"
-      className="relative flex min-h-[85svh] lg:min-h-screen w-full items-end overflow-hidden bg-obsidian"
+      className="relative flex min-h-[92svh] w-full items-end overflow-hidden bg-obsidian lg:min-h-screen"
     >
       <picture>
   <source srcSet={heroImage} type="image/webp" />
@@ -42,9 +42,9 @@ const Hero = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={container}
-        className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pb-20 md:pb-28 lg:pb-40"
+        className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pb-12 sm:pb-16 md:pb-28 lg:pb-40"
       >
-        <motion.div variants={item} className="mb-6 flex items-center gap-4">
+        <motion.div variants={item} className="mb-4 flex items-center gap-3 sm:mb-6 sm:gap-4">
           <motion.span
             initial={{ width: 0 }}
             animate={{ width: 48 }}
@@ -58,7 +58,7 @@ const Hero = () => {
 
         <motion.h1
           variants={item}
-          className="max-w-4xl font-display text-5xl font-light italic leading-[1.1] text-ivory sm:text-5xl lg:text-7xl"
+          className="max-w-4xl font-display text-[2.9rem] font-light italic leading-[1.02] text-ivory sm:text-5xl lg:text-7xl"
         >
           Crafting Interiors
           <br />
@@ -67,27 +67,28 @@ const Hero = () => {
 
         <motion.p
           variants={item}
-          className="mt-6 max-w-lg md:max-w-xl font-body text-base font-light leading-relaxed text-stone lg:text-lg"
+          className="mt-5 max-w-[340px] font-body text-sm font-light leading-7 text-stone sm:max-w-lg sm:text-base md:max-w-xl lg:mt-6 lg:text-lg"
         >
           At Niebo Interiors, every project is thoughtfully designed and crafted in our own manufacturing facility using premium materials, precision engineering, and timeless aesthetics—creating spaces that are elegant, functional, and built to last.
         </motion.p>
 
         <motion.div
           variants={item}
-          className="mt-10 flex flex-col sm:flex-row gap-4"
+          className="mt-7 flex w-full max-w-[340px] flex-col gap-3 sm:mt-10 sm:max-w-none sm:flex-row sm:gap-4"
         >
           <a
-            href="/projects"
-            className="border border-gold bg-gold px-8 py-3.5 font-body text-sm uppercase tracking-[0.2em] text-obsidian transition-all duration-300 hover:bg-transparent hover:text-gold"
-          >
-            Explore the Collection
-          </a>
-          <a
-            href="/contact"
-            className="border border-ivory/30 px-8 py-3.5 font-body text-sm uppercase tracking-[0.2em] text-ivory transition-all duration-300 hover:border-gold hover:text-gold"
-          >
-            Book a Consultation
-          </a>
+  href="/projects"
+  className="w-full border border-gold bg-gold px-6 py-3.5 text-center font-body text-sm uppercase tracking-[0.2em] text-obsidian transition-all duration-300 hover:bg-transparent hover:text-gold sm:w-auto sm:px-8"
+>
+  Explore the Collection
+</a>
+
+<a
+  href="/contact"
+  className="w-full border border-ivory/30 px-6 py-3.5 text-center font-body text-sm uppercase tracking-[0.2em] text-ivory transition-all duration-300 hover:border-gold hover:text-gold sm:w-auto sm:px-8"
+>
+  Book a Consultation
+</a>
         </motion.div>
       </motion.div>
 

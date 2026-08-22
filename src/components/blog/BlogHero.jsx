@@ -7,8 +7,8 @@ import thumbImage from "../../assets-optimized/images/blog/blog-1.webp";
 
 export default function BlogHero() {
   return (
-    <section className="bg-[#F7F5F2] pt-32 pb-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="bg-[#F7F5F2] px-4 pt-24 pb-16 sm:px-6 lg:px-0 lg:pt-32 lg:pb-24">
+      <div className="mx-auto w-full max-w-7xl lg:px-8">
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -20,7 +20,7 @@ export default function BlogHero() {
           <img
             src={heroImage}
             alt="Luxury Interior"
-            className="h-[780px] w-full object-cover"
+            className="h-[720px] w-full object-cover sm:h-[760px] lg:h-[780px]"
           />
 
           {/* Overlay */}
@@ -30,15 +30,15 @@ export default function BlogHero() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-transparent" />
 
           {/* Content */}
-          <div className="absolute inset-0 flex items-center">
+          <div className="absolute inset-0 flex min-w-0 items-center overflow-hidden">
 
-            <div className="max-w-[620px] px-12 lg:px-20">
+            <div className="min-w-0 w-full max-w-full px-6 sm:max-w-[620px] sm:px-10 lg:px-20">
 
               <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-5 py-2 text-xs uppercase tracking-[0.35em] text-[#C8A96A] backdrop-blur">
                 NIEBO INTERIORS JOURNAL
               </span>
-
-              <h1 className="mt-8 text-6xl font-light leading-[1.05] text-white lg:text-8xl">
+<h1 className="mt-6 max-w-full break-words text-[2.75rem] font-light leading-[0.98] text-white sm:text-6xl lg:mt-8 lg:text-8xl">
+              
                 Design
                 <br />
 
@@ -51,17 +51,17 @@ export default function BlogHero() {
                 Imagination
               </h1>
 
-              <p className="mt-8 max-w-xl text-lg leading-8 text-neutral-300">
+              <p className="mt-6 w-full max-w-full break-words text-sm leading-6 text-neutral-300 sm:text-lg sm:leading-8 lg:mt-8">
                 Discover timeless interiors, luxury kitchens,
                 elegant wardrobes and inspiring design stories
                 crafted by our expert designers.
               </p>
 
-              <div className="mt-12 flex flex-wrap gap-5">
+              <div className="mt-8 w-full min-w-0 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-5 lg:mt-12">
 
                 <a
                   href="#blogs"
-                  className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-black transition hover:scale-105"
+                  className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-white px-6 py-4 text-sm text-black transition hover:scale-105 sm:w-auto sm:px-8"
                 >
                   Explore Journal
 
@@ -70,7 +70,7 @@ export default function BlogHero() {
 
                 <button
   type="submit"
-  className="inline-flex items-center justify-center rounded-full bg-[#0B0B0B] px-8 py-4 text-sm font-medium text-white transition-all duration-300 hover:bg-[#C8A96A] hover:text-black"
+  className="inline-flex w-full items-center justify-center rounded-full bg-[#0B0B0B] px-6 py-4 text-sm font-medium text-white transition-all duration-300 hover:bg-[#C8A96A] hover:text-black sm:w-auto sm:px-8"
 >
   Book Consultation
 </button>

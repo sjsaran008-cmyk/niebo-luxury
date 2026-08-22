@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function BlogDetailsHero({ blog }) {
   return (
-    <section className="bg-[#F8F6F1] pb-16 pt-24 md:pb-20 md:pt-28 lg:pb-24">
+    <section className="bg-[#F8F6F1] pb-0 pt-24 md:pt-28">
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
 
@@ -32,7 +32,7 @@ export default function BlogDetailsHero({ blog }) {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative min-h-[560px] overflow-hidden rounded-[2rem] border border-zinc-200 md:min-h-[650px] lg:min-h-[700px]"
+          className="relative min-h-[540px] overflow-hidden rounded-[2rem] border border-zinc-200 sm:min-h-[560px] md:min-h-[650px] lg:min-h-[700px]"
         >
 
           {/* Image */}
@@ -68,19 +68,19 @@ export default function BlogDetailsHero({ blog }) {
             initial={{ opacity: 0, y: 35 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.25, duration: 0.8 }}
-            className="absolute inset-x-0 bottom-0 p-6 sm:p-8 md:p-12 lg:p-16"
+            className="absolute inset-x-0 bottom-0 p-5 sm:p-8 md:p-12 lg:p-16"
           >
 
             {/* Eyebrow */}
 
-            <p className="mb-5 text-[10px] uppercase tracking-[0.4em] text-[#D7AE62] md:text-xs">
+            <p className="mb-4 text-[9px] uppercase tracking-[0.3em] text-[#D7AE62] sm:text-[10px] md:mb-5 md:text-xs md:tracking-[0.4em]">
               Niebo Interiors Journal
             </p>
 
 
             {/* Title */}
 
-            <h1 className="max-w-5xl font-display text-4xl font-light leading-[1.05] text-white sm:text-5xl md:text-6xl lg:text-7xl">
+            <h1 className="max-w-5xl font-display text-[2.15rem] font-light leading-[1.02] text-white sm:text-5xl md:text-6xl lg:text-7xl">
               {blog.title}
             </h1>
 
@@ -88,7 +88,7 @@ export default function BlogDetailsHero({ blog }) {
             {/* Excerpt */}
 
             {blog.excerpt && (
-              <p className="mt-6 max-w-3xl text-sm leading-7 text-zinc-300 md:text-base md:leading-8">
+              <p className="mt-5 max-w-3xl text-[13px] leading-6 text-zinc-300 sm:text-sm sm:leading-7 md:mt-6 md:text-base md:leading-8">
                 {blog.excerpt}
               </p>
             )}
@@ -130,7 +130,7 @@ export default function BlogDetailsHero({ blog }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="mx-auto mt-12 max-w-3xl text-center md:mt-16"
+          className="mx-auto mt-4 max-w-3xl text-center md:mt-5"
         >
 
           <span className="text-[10px] uppercase tracking-[0.35em] text-[#B18A45] md:text-xs">
@@ -146,4 +146,3 @@ export default function BlogDetailsHero({ blog }) {
     </section>
   );
 }
-
