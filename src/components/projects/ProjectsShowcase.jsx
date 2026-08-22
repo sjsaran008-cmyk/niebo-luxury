@@ -8,7 +8,7 @@ import kitchen from "../../assets-optimized/about/kitchen.webp";
 import tvunit from "../../assets-optimized/about/tv-unit.webp";
 import bedroom from "../../assets-optimized/about/bedroom.webp";
 import living from "../../assets-optimized/about/living.webp";
-import wardrobe from "../../assets-optimized/about/bedroom.webp";
+import wardrobe from "../../assets/about/wardrobe.webp";
 import office from "../../assets-optimized/about/office.webp";
 
 const categories = [
