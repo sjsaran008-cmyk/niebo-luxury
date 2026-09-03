@@ -182,29 +182,31 @@ export default function ProjectsShowcase({
 </div>
         {/* Gallery */}
 
-        <div className="grid gap-6 md:gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div
+  className="grid gap-6 md:gap-8 md:grid-cols-2 xl:grid-cols-3"
+  style={{ contentVisibility: "auto", containIntrinsicSize: "1200px" }}
+>
                     {filteredProjects.map((project, index) => (
             <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 35 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.5,
-                delay: index * 0.08,
-              }}
+  key={project.id}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.35 }}
               className="group overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
             >
               {/* Image */}
               <div className="relative overflow-hidden">
-                <img loading="lazy" decoding="async"
+                <img
   src={project.image}
   alt={project.category}
+  width="1000"
+  height="800"
   loading="lazy"
   decoding="async"
-  className="h-64 md:h-80 w-full object-cover transition duration-700 group-hover:scale-110"
+  fetchPriority="low"
+  className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 md:h-80"
 />
-
                 {/* Overlay */}
                 <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/85 via-black/30 to-transparent p-8 opacity-0 transition duration-500 group-hover:opacity-100">
                  <Link
