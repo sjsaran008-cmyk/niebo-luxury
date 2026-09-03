@@ -23,7 +23,8 @@ export default function AboutHero() {
     >
       {/* Background Image */}
 
-      <img loading="lazy" decoding="async"
+      <img loading="eager"
+fetchPriority="high"decoding="async"
   src={heroImage}
   alt="Luxury Interior"
   fetchPriority="high"
