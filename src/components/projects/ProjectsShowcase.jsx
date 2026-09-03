@@ -7,7 +7,7 @@ import heroImage from "../../assets-optimized/images/hero.webp";
 import kitchen from "../../assets-optimized/about/kitchen.webp";
 import tvunit from "../../assets-optimized/about/tv-unit.webp";
 import bedroom from "../../assets-optimized/about/bedroom.webp";
-import living from "../../assets-optimized/about/living.webp";
+import living from "../../assets/about/living.webp";
 import wardrobe from "../../assets/about/wardrobe.webp";
 import office from "../../assets-optimized/about/office.webp";
 
@@ -60,12 +60,6 @@ const projects = [
     category: "TV Unit",
     title: "TV Unit",
     image: tvunit,
-  },
-  {
-    id: 8,
-    category: "Office",
-    title: "Office",
-    image: heroImage,
   },
   {
     id: 9,

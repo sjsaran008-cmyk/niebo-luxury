@@ -16,11 +16,68 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-import living from "../assets-optimized/about/living.webp";
-import kitchen from "../assets-optimized/about/kitchen.webp";
-import bedroom from "../assets-optimized/about/bedroom.webp";
-import tvunit from "../assets-optimized/about/tv-unit.webp";
-import wardrobe from "../assets-optimized/about/bedroom.webp";
+import living from "../assets/about/living.webp";
+import kitchen from "../assets/about/kitchen.webp";
+import bedroom from "../assets/about/bedroom.webp";
+import tvunit from "../assets/about/tv-unit.webp";
+import wardrobe from "../assets/about/wardrobe.webp";
+import poojaunit from "../assets/about/pooja unit.webp";
+/* =========================
+      kitchen
+  ========================= */
+import countertop from "../assets/about/Kitchen/counter top.webp";
+import KitchenFinish from "../assets/about/Kitchen/Kitchen Finish.webp";
+import KitchenStorage from "../assets/about/Kitchen/Kitchen Storage.webp";
+import OverheadCabinets from "../assets/about/Kitchen/Overhead Cabinets.webp";
+/* =========================
+     living room
+  ========================= */
+import DecorDetails from "../assets/about/Living Room/Decor Details.webp";
+import DisplayUnit from "../assets/about/Living Room/Display Unit.webp";
+import Lighting from "../assets/about/Living Room/Lighting.webp";
+import SeatingArea from "../assets/about/Living Room/Seating Area.webp";
+import TVWall from "../assets/about/Living Room/TV Wall.webp";
+import Livingroom from "../assets/about/Living Room/Living room.webp";
+/* =========================
+     bedroom
+  ========================= */
+  import MasterBedroom from "../assets/about/bedroom/Master Bedroom.webp";
+  import BedBackdrop from "../assets/about/bedroom/Bed Backdrop.webp";
+  import Wardrobe from "../assets/about/bedroom/Wardrobe 3.webp";
+  import Storage from "../assets/about/bedroom/Storage.webp";
+  import Bedroomlighting from "../assets/about/bedroom/Bedroom lighting.webp";
+  import BedroomDetails from "../assets/about/bedroom/Bedroom Details.webp";
+/* =========================
+     Wardrobe
+  ========================= */
+  import BedroomIntegration from "../assets/about/Wardrobe/Bedroom Integration.webp";
+  import FullWardrobe from "../assets/about/Wardrobe/Full Wardrobe.webp";
+  import InternalStorage from "../assets/about/Wardrobe/Internal Storage.webp";
+  import LightingDetail from "../assets/about/Wardrobe/Lighting Detail.webp";
+  import OpenStorage from "../assets/about/Wardrobe/Open Storage.webp";
+  import PremiumFinish from "../assets/about/Wardrobe/Premium Finish.webp";
+/* =========================
+     TV Unit
+  ========================= */
+  import DisplayShelves from "../assets/about/TV Unit/Display Shelves.webp";      
+  import LivingIntegration from "../assets/about/TV Unit/Living Integration.webp";    
+  import MainTVUnit from "../assets/about/TV Unit/Main TV Unit.webp";    
+  import TVLighting from "../assets/about/TV Unit/TV Lighting.webp"; 
+  import TVStorage from "../assets/about/TV Unit/TV Storage.webp"; 
+  import WallPanelling from "../assets/about/TV Unit/Wall Panelling.webp"; 
+
+/* =========================
+     Commercial
+  ========================= */
+  import BillingArea from "../assets/about/Commercial/Billing Area.webp"; 
+  import Commercialhero from "../assets/about/Commercial/Commercial hero.webp"; 
+  import CommercialLighting from "../assets/about/Commercial/Commercial Lighting.webp"; 
+  import CustomerArea from "../assets/about/Commercial/Customer Area.webp"; 
+  import DisplayArea from "../assets/about/Commercial/Display Area.webp"; 
+  import MainCommercialSpace from "../assets/about/Commercial/Main Commercial Space.webp"; 
+  
+
+
 
 /*
   IMPORTANT:
@@ -68,7 +125,7 @@ const projects = {
       },
       {
         title: "Pooja Unit",
-        image: living,
+        image: poojaunit,
       },
     ],
   },
@@ -93,15 +150,15 @@ const projects = {
       },
       {
         title: "Kitchen Storage",
-        image: kitchen,
+        image: KitchenStorage,
       },
       {
         title: "Countertop",
-        image: kitchen,
+        image: countertop,
       },
       {
         title: "Overhead Cabinets",
-        image: kitchen,
+        image: OverheadCabinets,
       },
       {
         title: "Utility Area",
@@ -109,7 +166,7 @@ const projects = {
       },
       {
         title: "Kitchen Finish",
-        image: kitchen,
+        image: KitchenFinish,
       },
     ],
   },
@@ -122,7 +179,7 @@ const projects = {
     area: "450 Sq.ft",
     scope: "Living Room Interior",
 
-    hero: living,
+    hero: Livingroom,
 
     description:
       "A sophisticated living space combining warm materials, elegant lighting, comfortable furniture, and thoughtful detailing.",
@@ -130,27 +187,27 @@ const projects = {
     spaces: [
       {
         title: "Main Living Area",
-        image: living,
+        image: Livingroom,
       },
       {
         title: "Seating Area",
-        image: living,
+        image: SeatingArea,
       },
       {
         title: "TV Wall",
-        image: tvunit,
+        image: TVWall,
       },
       {
         title: "Display Unit",
-        image: living,
+        image: DisplayUnit,
       },
       {
         title: "Lighting",
-        image: living,
+        image: Lighting,
       },
       {
         title: "Decor Details",
-        image: living,
+        image: DecorDetails,
       },
     ],
   },
@@ -163,7 +220,7 @@ const projects = {
     area: "220 Sq.ft",
     scope: "Bedroom Interior",
 
-    hero: bedroom,
+    hero: MasterBedroom,
 
     description:
       "A calm and contemporary bedroom designed around comfort, storage, functionality, and a warm luxurious atmosphere.",
@@ -171,27 +228,27 @@ const projects = {
     spaces: [
       {
         title: "Master Bedroom",
-        image: bedroom,
+        image: MasterBedroom,
       },
       {
         title: "Bed Backdrop",
-        image: bedroom,
+        image: BedBackdrop,
       },
       {
         title: "Wardrobe",
-        image: wardrobe,
+        image: Wardrobe,
       },
       {
         title: "Storage",
-        image: wardrobe,
+        image: Storage,
       },
       {
         title: "Lighting",
-        image: bedroom,
+        image: Bedroomlighting,
       },
       {
         title: "Bedroom Details",
-        image: bedroom,
+        image: BedroomDetails,
       },
     ],
   },
@@ -212,27 +269,27 @@ const projects = {
     spaces: [
       {
         title: "Full Wardrobe",
-        image: wardrobe,
+        image: FullWardrobe,
       },
       {
         title: "Open Storage",
-        image: wardrobe,
+        image: OpenStorage,
       },
       {
         title: "Internal Storage",
-        image: wardrobe,
+        image: InternalStorage,
       },
       {
         title: "Premium Finish",
-        image: wardrobe,
+        image: PremiumFinish,
       },
       {
         title: "Lighting Detail",
-        image: wardrobe,
+        image: LightingDetail,
       },
       {
         title: "Bedroom Integration",
-        image: bedroom,
+        image: BedroomIntegration,
       },
     ],
   },
@@ -245,7 +302,7 @@ const projects = {
     area: "120 Sq.ft",
     scope: "TV Unit Interior",
 
-    hero: tvunit,
+    hero: MainTVUnit,
 
     description:
       "A statement TV unit designed to bring together entertainment, storage, lighting, and refined visual balance.",
@@ -253,72 +310,27 @@ const projects = {
     spaces: [
       {
         title: "Main TV Unit",
-        image: tvunit,
+        image: MainTVUnit,
       },
       {
         title: "Display Shelves",
-        image: tvunit,
+        image: DisplayShelves,
       },
       {
         title: "Storage",
-        image: tvunit,
+        image: TVStorage,
       },
       {
         title: "Wall Panelling",
-        image: tvunit,
+        image: WallPanelling,
       },
       {
         title: "Lighting",
-        image: tvunit,
+        image: TVLighting,
       },
       {
         title: "Living Integration",
-        image: living,
-      },
-    ],
-  },
-
-  /* =========================
-     8. OFFICE
-  ========================= */
-
-  "8": {
-    title: "Office",
-    subtitle: "Interiors",
-    category: "Office",
-    location: "Erode, Tamil Nadu",
-    area: "500 Sq.ft",
-    scope: "Office Interior",
-
-    hero: office,
-
-    description:
-      "A modern office interior designed to create a productive, comfortable, and professional workspace with a refined contemporary aesthetic.",
-
-    spaces: [
-      {
-        title: "Main Office",
-        image: office,
-      },
-      {
-        title: "Reception Area",
-        image: office,
-      },
-      {
-        title: "Workstation",
-        image: office,
-      },
-      {
-        title: "Meeting Area",
-        image: office,
-      },
-      {
-        title: "Storage",
-        image: office,
-      },
-      {
-        title: "Complete Office",
-        image: office,
+        image: LivingIntegration,
       },
     ],
   },
@@ -335,7 +347,7 @@ const projects = {
     area: "1500 Sq.ft",
     scope: "Commercial Interior",
 
-    hero: commercial,
+    hero: Commercialhero,
 
     description:
       "A premium commercial interior designed to balance customer experience, functionality, brand identity, and contemporary aesthetics.",
@@ -343,27 +355,27 @@ const projects = {
     spaces: [
       {
         title: "Main Commercial Space",
-        image: commercial,
+        image: MainCommercialSpace,
       },
       {
         title: "Customer Area",
-        image: commercial,
+        image: CustomerArea,
       },
       {
         title: "Display Area",
-        image: commercial,
+        image: DisplayArea,
       },
       {
-        title: "Seating Area",
-        image: commercial,
+        title: "Billing Area",
+        image: BillingArea,
       },
       {
         title: "Lighting Detail",
-        image: commercial,
+        image: CommercialLighting,
       },
       {
         title: "Complete Commercial Interior",
-        image: commercial,
+        image: MainCommercialSpace,
       },
     ],
   },
