@@ -82,13 +82,11 @@ export default function InstallationProcess() {
           <h2 className="mt-6 font-display text-4xl font-light leading-tight text-white md:text-5xl">
             From Installation
             <br />
-            To Lifetime Support.
+            To Final Installation.
           </h2>
 
           <p className="mt-8 text-base md:text-lg leading-7 md:leading-8 text-zinc-400">
-            Every project is completed with precision,
-            professionalism, and dependable after-sales
-            support to ensure lasting satisfaction.
+            From detailed planning and safe delivery to precision installation and after-sales support, every stage is handled with care to deliver a seamless interior experience.
           </p>
         </motion.div>
 
@@ -120,7 +118,7 @@ export default function InstallationProcess() {
 
                 </div>
 
-                <h3 className="mt-8 text-xl md:text-2xlfont-medium text-white">
+                <h3 className="mt-8 text-xl font-medium text-white md:text-2xl">
                   {step.title}
                 </h3>
 

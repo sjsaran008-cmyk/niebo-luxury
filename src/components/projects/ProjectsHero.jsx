@@ -6,9 +6,9 @@ export default function ProjectsHero() {
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Background Image */}
-      <img loading="eager" fetchPriority="high" decoding="async"
+      <img
   src={heroImage}
-  alt="Luxury Interior Projects"
+  alt="Niebo Interiors premium interior projects in Erode"
   fetchPriority="high"
   loading="eager"
   decoding="async"
@@ -40,9 +40,9 @@ export default function ProjectsHero() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="mt-8 font-display text-4xl font-light leading-tight text-white md:text-7xl"
           >
-            Spaces Designed
+             Premium Interior Projects
             <br />
-            To Be Lived In.
+            Crafted in Erode.
           </motion.h1>
 
           <motion.p
@@ -51,9 +51,9 @@ export default function ProjectsHero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-zinc-300"
           >
-            Explore a curated collection of luxury interiors crafted with
-            precision, premium materials, and timeless design. Every project
-            reflects our commitment to quality and attention to detail.
+            Explore our collection of modular kitchens, wardrobes, living spaces,
+  and complete home interiors in Erode—designed with premium materials,
+  precision manufacturing, and thoughtful craftsmanship.
           </motion.p>
 
             <motion.div

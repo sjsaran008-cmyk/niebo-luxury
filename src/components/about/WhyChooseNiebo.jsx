@@ -11,39 +11,39 @@ import {
 const features = [
   {
     icon: Layers3,
-    title: "End-to-End Interior Solutions",
+    title: "Complete Interior Solutions",
     description:
-      "From concept planning and space design to manufacturing and installation, every stage is managed under one roof for a seamless experience.",
+      "From space planning and design to manufacturing and installation, we manage every stage under one roof for a seamless interior experience.",
   },
   {
     icon: Compass,
-    title: "Personalized Design Consultation",
+    title: "Designs Tailored to You",
     description:
-      "Our designers understand your lifestyle, preferences, and budget to create interiors that truly reflect your vision.",
+      "We understand your lifestyle, preferences, space and requirements to create interiors that feel personal, functional and timeless.",
   },
   {
     icon: Factory,
-    title: "Precision Factory Finishing",
+    title: "Own Manufacturing Facility",
     description:
-      "Every component is manufactured with advanced machinery to ensure superior quality, consistency, and flawless finishing.",
+      "Our manufacturing capability gives us greater control over materials, precision, finishing and execution throughout your project.",
   },
   {
     icon: Gem,
-    title: "Premium Materials & Branded Hardware",
+    title: "Premium Materials & Hardware",
     description:
-      "We use carefully selected materials and trusted hardware brands to ensure durability, elegance, and long-term performance.",
+      "We carefully select quality materials and trusted hardware to deliver interiors designed for durability, functionality and refined aesthetics.",
   },
   {
     icon: Hammer,
-    title: "Professional Installation",
+    title: "Precision Installation",
     description:
-      "Our experienced installation team delivers every project with precision, cleanliness, and attention to every detail.",
+      "Our installation team focuses on accuracy, finishing and attention to detail to ensure every element comes together beautifully.",
   },
   {
     icon: ShieldCheck,
-    title: "Reliable Warranty & After-Sales Support",
+    title: "Warranty & After-Sales Support",
     description:
-      "Even after project completion, we continue to support you with dependable warranty coverage and responsive service.",
+      "Our relationship continues beyond installation with dependable warranty support and responsive after-sales service.",
   },
 ];
 

@@ -32,7 +32,7 @@ const Hero = () => {
       {/* LCP IMAGE — LOAD IMMEDIATELY */}
       <img
         src={heroImage}
-        alt="Luxury Interior"
+        alt="Premium interior design in Erode - Niebo Interiors"
         width="1920"
         height="1080"
         loading="eager"
@@ -68,19 +68,18 @@ const Hero = () => {
           variants={item}
           className="max-w-4xl font-display text-[2.9rem] font-light italic leading-[1.02] text-ivory sm:text-5xl lg:text-7xl"
         >
-          Crafting Interiors
-          <br />
-          That Feel Like Home
+          Premium Interior Designers
+<br />
+in Erode
         </motion.h1>
 
         <motion.p
           variants={item}
           className="mt-5 max-w-[340px] font-body text-sm font-light leading-7 text-stone sm:max-w-lg sm:text-base md:max-w-xl lg:mt-6 lg:text-lg"
         >
-          At Niebo Interiors, every project is thoughtfully designed and crafted
-          in our own manufacturing facility using premium materials, precision
-          engineering, and timeless aesthetics—creating spaces that are elegant,
-          functional, and built to last.
+          At Niebo Interiors, we create premium home interiors in Erode,
+including modular kitchens, wardrobes, living spaces and complete
+interior solutions—designed, manufactured and installed with precision.
         </motion.p>
 
         <motion.div

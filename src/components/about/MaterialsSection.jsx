@@ -38,14 +38,11 @@ export default function MaterialsSection() {
           <h2 className="mt-6 font-display text-4xl font-light leading-tight text-[#111] md:text-5xl">
             Premium Materials &
             <br />
-            Branded Hardware.
+            Precision Hardware.
           </h2>
 
           <p className="mt-8 text-base md:text-lg leading-8 md:leading-9 text-gray-600">
-            We carefully select premium-quality materials and
-            trusted hardware brands to ensure every interior
-            delivers exceptional durability, elegant finishes,
-            and long-lasting performance.
+           Every interior begins with the right materials. We carefully select durable boards, premium finishes, and reliable hardware to create spaces that look refined, perform effortlessly, and stand the test of time.
           </p>
 
           {/* Features */}
@@ -95,7 +92,7 @@ export default function MaterialsSection() {
               ].map((brand) => (
                 <span
                   key={brand}
-                  className="rounded-full border border-[#C8A96A]/30 px-4 py-2 text-xs md:text-sm text-sm text-gray-700"
+                  className="rounded-full border border-[#C8A96A]/30 px-4 py-2 text-xs text-gray-700 md:text-sm"
                 >
                   {brand}
                 </span>
@@ -119,9 +116,9 @@ export default function MaterialsSection() {
 
           <div className="hidden md:block absolute -left-6 -bottom-6 h-full w-full rounded-[32px] border border-[#C8A96A]/20" />
 
-          <img loading="lazy" decoding="async"
+          <img
   src={materialsImage}
-  alt="Premium Materials"
+  alt="Premium interior materials and branded hardware at Niebo Interiors"
   loading="lazy"
   decoding="async"
   className="relative h-[500px] md:h-[650px] w-full rounded-[32px] object-cover shadow-2xl"

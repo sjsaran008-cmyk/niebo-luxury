@@ -86,12 +86,12 @@ export default function OurStory() {
         >
           <div className="hidden md:block h-full w-full rounded-[32px] border border-[#C8A96A]/20" />
 
-          <img loading="lazy" decoding="async"
+          <img
   src={storyImage}
-  alt="Our Story"
+  alt="Niebo Interiors interior design craftsmanship"
   loading="lazy"
   decoding="async"
-  className="relative h-[500px] md:h-[650px] w-full rounded-[32px] object-cover shadow-2xl"
+  className="relative h-[500px] w-full rounded-[32px] object-cover shadow-2xl md:h-[650px]"
 />
 
           {/* Floating Badge */}

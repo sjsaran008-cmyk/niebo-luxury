@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ctaImage from "../../assets/about/our story.webp";
+import ctaImage from "../../assets-optimized/images/hero.webp";
 const fadeUp = {
   hidden: {
     opacity: 0,
@@ -25,7 +25,7 @@ export default function AboutCTA() {
 
       <img loading="lazy" decoding="async"
         src={ctaImage}
-        alt="Luxury Interior"
+        alt="Premium interior design by Niebo Interiors in Erode"
         className="absolute inset-0 h-full w-full object-cover"
       />
 
@@ -57,10 +57,10 @@ export default function AboutCTA() {
           </h2>
 
           <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-zinc-300">
-            Whether you're planning a new home, renovating an
-            existing space, or designing a commercial project,
-            our team is ready to turn your vision into reality
-            with precision, creativity, and unmatched craftsmanship.
+             Planning a new home, renovating your space, or creating a
+  commercial interior? Our team is ready to bring your vision
+  to life with thoughtful design, quality materials, and
+  precision craftsmanship.
           </p>
 
           {/* Buttons */}

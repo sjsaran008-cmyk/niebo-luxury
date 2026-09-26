@@ -23,10 +23,9 @@ export default function AboutHero() {
     >
       {/* Background Image */}
 
-      <img loading="eager"
-fetchPriority="high"decoding="async"
+      <img loading="lazy" decoding="async"
   src={heroImage}
-  alt="Luxury Interior"
+  alt="Niebo Interiors - premium interior design in Erode"
   fetchPriority="high"
   loading="eager"
   decoding="async"
@@ -61,9 +60,9 @@ fetchPriority="high"decoding="async"
           transition={{ delay: 0.2 }}
           className="mt-8 font-display text-4xl font-light leading-[1.05] text-white md:text-6xl lg:text-8xl"
         >
-          Thoughtfully Designed.
-          <br />
-          Timelessly Crafted.
+          Premium Interiors.
+<br />
+Thoughtfully Crafted in Erode.
         </motion.h1>
 
         <motion.p
@@ -73,9 +72,9 @@ fetchPriority="high"decoding="async"
           transition={{ delay: 0.4 }}
           className="mx-auto mt-10 max-w-3xl text-base md:text-xl leading-8 md:leading-9 text-gray-300 md:text-xl"
         >
-          We create interiors that blend thoughtful design,
-          premium craftsmanship, and lasting quality—transforming
-          every space into a timeless expression of your lifestyle.
+          We create premium interiors in Erode, combining thoughtful design,
+quality materials, precision manufacturing, and expert installation
+to create functional and timeless spaces for modern lifestyles.
         </motion.p>
 
         <motion.a
