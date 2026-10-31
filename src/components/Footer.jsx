@@ -162,7 +162,7 @@ export default function Footer() {
                   />
 
                   <span className="leading-7 text-zinc-400">
-                    +91 83007 66241
+                    +91  78714 88160
                   </span>
 
                 </div>
