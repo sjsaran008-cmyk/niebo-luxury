@@ -1,5 +1,7 @@
+import SEO from "../components/SEO";
 import { Link, useParams } from "react-router-dom";
 import logo from "../assets-optimized/images/logo.webp";
+
 
 import {
   ArrowLeft,
@@ -424,13 +426,34 @@ const overview = [
   },
 ];
 
+
 export default function ProjectDetails() {
   const { id } = useParams();
 
-  const project = projects[id] || projects["1"];
+  const project = projects[id];
+
+  if (!project) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#0B0B0B] text-white">
+        <h1>Project Not Found</h1>
+      </div>
+    );
+  }
+
+  const seoTitle = `${project.title} Interiors in Erode | Niebo Interiors`;
+
+  const seoDescription = `${project.description} Explore this ${project.category.toLowerCase()} project by Niebo Interiors in ${project.location}.`;
 
   return (
-    <div className="min-h-screen bg-[#0B0B0B] text-white">
+    <>
+      <SEO
+        title={seoTitle}
+        description={seoDescription}
+        path={`/projects/${id}`}
+      />
+
+      <div className="min-h-screen bg-[#0B0B0B] text-white">
+
 
       {/* =========================
           NAVBAR
@@ -787,7 +810,8 @@ export default function ProjectDetails() {
 
       </section>
 
-    </div>
+      </div>
+    </>
   );
 }
 

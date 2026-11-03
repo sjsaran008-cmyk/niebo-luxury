@@ -46,17 +46,18 @@ export default function TrustedBrands() {
           </p>
 
           <h2 className="mt-5 font-serif text-3xl md:text-5xl text-[#161616]">
-            Global Partners.
+            Trusted Global Brands
           </h2>
 
           <h3 className="mt-2 font-serif text-3xl md:text-5xl italic text-[#B48A3A]">
-            Exceptional Interiors.
+            For Premium Interiors
           </h3>
 
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-neutral-600">
-            Every Niebo Interior is crafted using premium materials,
-            world-class fittings, and internationally trusted brands to
-            ensure lasting beauty, durability, and flawless performance.
+            At Niebo Interiors, Erode, we create refined living spaces using
+  premium materials, world-class fittings, and globally trusted brands.
+  Every detail is carefully selected to deliver lasting beauty,
+  durability, and everyday functionality.
           </p>
 
         </div>

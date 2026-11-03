@@ -1,6 +1,9 @@
+
 import { useState } from "react";
 
 import Navbar from "../components/Navbar";
+import SEO from "../components/SEO";
+
 import ProjectsHero from "../components/projects/ProjectsHero";
 import ProjectsShowcase from "../components/projects/ProjectsShowcase";
 import Testimonials from "../components/projects/Testimonials";
@@ -14,6 +17,12 @@ export default function Projects() {
 
   return (
     <>
+      <SEO
+        title="Interior Design Projects in Erode | Niebo Interiors"
+        description="Explore Niebo Interiors' residential interior design projects in Erode, featuring premium modular kitchens, wardrobes and thoughtfully designed living spaces."
+        path="/projects"
+      />
+
       <Navbar />
 
       <ProjectsHero />
@@ -33,5 +42,3 @@ export default function Projects() {
     </>
   );
 }
-
-

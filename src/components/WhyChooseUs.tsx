@@ -124,9 +124,9 @@ export default function WhyChooseUs() {
             variants={item}
             className="mt-6 font-display text-5xl font-light leading-tight text-[#181818] lg:text-6xl"
           >
-            The Difference
+            Why Choose Niebo Interiors for Your
             <br />
-            You Can Feel.
+            Home Interiors in Erode?
           </motion.h2>
 
           <motion.div

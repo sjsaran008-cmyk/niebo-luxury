@@ -38,7 +38,7 @@ const fadeUp = {
 const processSteps = [
   {
     id: "01",
-    title: "Consultation",
+    title: "Home interior consultation",
     subtitle: "Understanding Your Vision",
     icon: ClipboardCheck,
     description:
@@ -48,7 +48,7 @@ const processSteps = [
   },
   {
     id: "02",
-    title: "Site Measurement",
+    title: "Interior space planning",
     subtitle: "Precision Planning",
     icon: Ruler,
     description:
@@ -58,7 +58,7 @@ const processSteps = [
   },
   {
     id: "03",
-    title: "Design & 3D Visualization",
+    title: "3D interior design Visualization",
     subtitle: "Experience Before Execution",
     icon: PenTool,
     description:
@@ -68,7 +68,7 @@ const processSteps = [
   },
   {
     id: "04",
-    title: "Material Selection",
+    title: "Premium interior materials",
     subtitle: "Premium Finishes",
     icon: Palette,
     description:
@@ -78,7 +78,7 @@ const processSteps = [
   },
   {
     id: "05",
-    title: "Production",
+    title: "Modular furniture manufacturing",
     subtitle: "Factory Crafted",
     icon: Factory,
     description:
@@ -88,7 +88,7 @@ const processSteps = [
   },
   {
     id: "06",
-    title: "Execution & Installation",
+    title: "Professional interior installation",
     subtitle: "Perfect Delivery",
     icon: Wrench,
     description:
@@ -98,7 +98,7 @@ const processSteps = [
   },
   {
     id: "07",
-    title: "Move In & Celebrate",
+    title: "Complete home interiors",
     subtitle: "Luxury Delivered",
     icon: Home,
     description:
@@ -152,21 +152,22 @@ export default function ProcessTimeline() {
 
           <h2 className="font-serif text-5xl font-light leading-tight md:text-6xl">
 
-            Your Dream Home
+            Our Interior Design
 
           </h2>
 
           <h3 className="mt-4 bg-gradient-to-r from-[#C7A15C] via-[#E7C985] to-[#C7A15C] bg-clip-text text-4xl font-serif italic text-transparent md:text-5xl">
 
-            in 7 Simple Steps
+            Process in Erode
 
           </h3>
 
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-zinc-400">
 
-            Every exceptional interior begins with a thoughtful process.
-            From consultation to final handover, every step is executed
-            with transparency, precision and premium craftsmanship.
+            At Niebo Interiors, our home interior design process in Erode
+  combines thoughtful planning, detailed 3D visualization,
+  premium material selection, precision manufacturing and
+  professional installation to bring your dream home to life.
 
           </p>
 
